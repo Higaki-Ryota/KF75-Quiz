@@ -5,7 +5,6 @@
         ><span class="correctcount">{{ correctCount }}</span
         >問</span
       >
-      <span class="bunbo">/10問</span>
     </div>
   </template>
   

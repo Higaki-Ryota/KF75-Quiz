@@ -1,8 +1,10 @@
 <template>
     <o-popup>
       <a-question-header :index="index + 1" />
-      <a-question-timer @timeout="timeout" />
+      <a-question-correct-number :correctNumber="correctNumber" :questionNumber="index"></a-question-correct-number>
+      <a-question-timer @timeout="timeout" :count="count"/>
       <a-question-text :text="quizData.question" />
+      <a-question-answer :answerState="answerState" :quiz-data="quizData" v-if="answerDisplay"/>
       <o-question-options :quiz-data="quizData" @select="onSelected" />
     </o-popup>
   </template>
@@ -13,6 +15,10 @@
     type Props = {
       quizData: QuizData;
       index: number;
+      count: number;
+      correctNumber: number;
+      answerState: string;
+      answerDisplay: boolean;
     };
     type Emit = {
       (event: "select", isCorrect: boolean): void;
