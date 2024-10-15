@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   hooks: {
     'generate:done'() {
-      const distDir = join(process.cwd(), 'dist')
+      const distDir = join(process.cwd(), 'docs')
       writeFileSync(join(distDir, '.nojekyll'), '')
     }
   },
