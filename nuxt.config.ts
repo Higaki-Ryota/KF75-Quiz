@@ -19,4 +19,5 @@ export default defineNuxtConfig({
     dir: 'docs', // 出力先フォルダを 'dist' から 'docs' に変更
     fallback: true, // SPAモード用に404.htmlを生成
   },
+  ssr: false,
 });
