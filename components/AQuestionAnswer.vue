@@ -6,12 +6,10 @@
   </template>
   
   <script setup lang="ts">
-  // import type { QuizData } from "../composables/quizData";
 
     type Props = {
       answerState: string;
       answer: string;
-      // quizData: QuizData;
       correctIndex : number;
     };
     const props = defineProps<Props>();
