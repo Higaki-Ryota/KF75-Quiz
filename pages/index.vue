@@ -3,7 +3,6 @@
     <a-background />
     <t-menu v-if="displayState === 'menu'" @select="onLevelSelected" :Levels=Levels></t-menu>
     <t-question v-else-if="displayState === 'question'" :count="count" :correctIndex="quizData[quizLevel][shuffledNumber[quizIndex]]" :quizIndex="quizIndex" :quizNumber=shuffledNumber[quizIndex] :level="quizLevel" :correctNumber="correctCount" :answerState="answerState" :answerDisplay="answerDisplay" @select="onSelected" @timeout="timeout" />
-    <!-- <t-answer v-else-if="displayState === 'answer'" :is-final="quizIndex === shuffledQuizData.length" :quiz-data="shuffledQuizData[quizIndex]" :answer-state="answerState" @select="onNext" /> -->
     <t-result v-else-if="displayState === 'result'" :correct-count="correctCount" @select="playAgain" />
   </div>
 </template>
@@ -24,7 +23,6 @@
   const onLevelSelected = (level:number) => {
     quizLevel.value = level;
     displayState.value = "question";
-    // shuffledQuizData.value = getRandomArray(quizData[quizLevel.value], 21)
     shuffledNumber.value = getRandomArray(randomIndex, 21);
     count.value = 60;
     questionTime.value = Date.now();
@@ -33,8 +31,7 @@
 
   const quizIndex = ref(0);
   const correctCount = ref(0);
-  // const shuffledQuizData = ref(getRandomArray(quizData[quizLevel.value], 21));
-  const answerState = ref<"正解！" | "不正解" | "時間切れ">(null as any);
+  const answerState = ref<"正解！" | "不正解" >(null as any);
 
   const count=ref(60);
   const countdown = () => {
@@ -48,24 +45,6 @@
   onMounted(() => {
     countdown();
   })
-  // const countdown = () => {
-  //   if (count.value > 0) {
-  //     count.value--;
-  //   } else {
-  //     clearInterval(timer);
-  //     // emit("timeout");
-  //   }
-  // };
-
-  // let timer;
-
-  // const timer = () => {
-  //   setInterval(countdown, 1000);
-  // }
-
-  // onMounted(() => {
-  //   timer = setInterval(countdown, 1000);
-  // });
 
   const answerDisplay = ref(false);
   const questionTime = ref(0);
@@ -97,25 +76,10 @@
     };
   };
 
-  // const timeout = () => {
-  //   answerState.value = "時間切れ";
-  //   displayState.value = "answer";
-  // };
-
-  // const onNext = () => {
-  //   if (quizIndex.value === shuffledQuizData.value.length - 1) {
-  //     displayState.value = "result";
-  //   } else {
-  //     quizIndex.value++;
-  //     displayState.value = "question";
-  //   }
-  // };
-
   const playAgain = () => {
     displayState.value = "menu";
     quizIndex.value = 0;
     correctCount.value = 0;
-    // shuffledQuizData.value = getRandomArray(quizData[quizLevel.value], 21);
     shuffledNumber.value = getRandomArray(randomIndex, 21);
   };
 </script>

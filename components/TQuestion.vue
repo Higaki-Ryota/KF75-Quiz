@@ -10,11 +10,8 @@
   </template>
   
   <script setup lang="ts">
-    // import type { QuizData } from "../composables/quizData";
   
     type Props = {
-      // quizData: QuizData;
-      // index: number;
       count: number;
       correctNumber: number;
       answerState: string;

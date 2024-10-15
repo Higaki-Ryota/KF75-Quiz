@@ -5,10 +5,8 @@
   </template>
   
   <script setup lang="ts">
-  // import type { QuizData } from "../composables/quizData";
 
     type Props = {
-      // quizData: QuizData;
       quizNumber: number;
       level:number;
     };
