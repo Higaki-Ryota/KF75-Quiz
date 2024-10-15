@@ -20,4 +20,7 @@ export default defineNuxtConfig({
     fallback: true, // SPAモード用に404.htmlを生成
   },
   ssr: false,
+  app: {
+    baseURL: '/KF75-Quiz/'
+  }
 });
