@@ -1885,12 +1885,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.2.0":
+"@types/node@npm:*":
   version: 22.2.0
   resolution: "@types/node@npm:22.2.0"
   dependencies:
     undici-types: "npm:~6.13.0"
   checksum: 10/2957c5c81f1a07a1210f28382adae65c11070c301e395fa819448516f1a2a710054b29e0ec7d8e28624afbcd90dae810403a497109545dea835b554fc76edf6c
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^22.7.5":
+  version: 22.7.5
+  resolution: "@types/node@npm:22.7.5"
+  dependencies:
+    undici-types: "npm:~6.19.2"
+  checksum: 10/e8ba102f8c1aa7623787d625389be68d64e54fcbb76d41f6c2c64e8cf4c9f4a2370e7ef5e5f1732f3c57529d3d26afdcb2edc0101c5e413a79081449825c57ac
   languageName: node
   linkType: hard
 
@@ -7076,7 +7085,7 @@ __metadata:
   dependencies:
     "@nuxtjs/eslint-config-typescript": "npm:^12.1.0"
     "@types/eslint": "npm:^9.6.0"
-    "@types/node": "npm:^22.2.0"
+    "@types/node": "npm:^22.7.5"
     "@types/prettier": "npm:^3.0.0"
     "@typescript-eslint/eslint-plugin": "npm:^8.1.0"
     "@typescript-eslint/parser": "npm:^8.1.0"
@@ -9553,6 +9562,13 @@ __metadata:
   version: 6.13.0
   resolution: "undici-types@npm:6.13.0"
   checksum: 10/da52e37cbc6da3a75da86fa08dd795ca8924430deb91005eb884b840e46e19013ccd4c1c289f70018e8cf0c338add24a500e7c3acfcd49b1ffb27ff9f91e38b9
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~6.19.2":
+  version: 6.19.8
+  resolution: "undici-types@npm:6.19.8"
+  checksum: 10/cf0b48ed4fc99baf56584afa91aaffa5010c268b8842f62e02f752df209e3dea138b372a60a963b3b2576ed932f32329ce7ddb9cb5f27a6c83040d8cd74b7a70
   languageName: node
   linkType: hard
 
