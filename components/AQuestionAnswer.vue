@@ -1,17 +1,18 @@
   <template>
     <div>
       <div class="answerState">{{ answerState }}</div>
-      <div class="answer">答え：{{ ABCD[quizData.correctIndex] }}</div>
+      <div class="answer">答え：{{ ABCD[correctIndex] }}</div>
     </div>
   </template>
   
   <script setup lang="ts">
-  import type { QuizData } from "../composables/quizData";
+  // import type { QuizData } from "../composables/quizData";
 
     type Props = {
       answerState: string;
       answer: string;
-      quizData: QuizData;
+      // quizData: QuizData;
+      correctIndex : number;
     };
     const props = defineProps<Props>();
     const ABCD = ["A", "B", "C", "D"];
