@@ -1,7 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { writeFileSync } from 'fs'
+import { join } from 'path'
 
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
+  hooks: {
+    'generate:done'() {
+      const distDir = join(process.cwd(), 'dist')
+      writeFileSync(join(distDir, '.nojekyll'), '')
+    }
+  },
   devtools: { enabled: true },
   target: 'static',
   router: {
