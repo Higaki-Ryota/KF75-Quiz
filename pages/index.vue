@@ -12,6 +12,23 @@
   import {ref} from 'vue'
   import {getRandomArray} from "../composables/utils";
   import {quizData} from "../composables/quizData";
+  import { initializeApp } from "firebase/app";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+  import firebase from 'firebase/compat/app';
+  import 'firebase/firestore';
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyD1LeqIBFxE6wU2gE2xDTeSV_O4xTQSazw",
+    authDomain: "kf75-8d355.firebaseapp.com",
+    projectId: "kf75-8d355",
+    storageBucket: "kf75-8d355.firebasestorage.app",
+    messagingSenderId: "385498511746",
+    appId: "1:385498511746:web:9fc5581c8479ac83abf79b"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
   type DisplayState = "question" | "result" | "menu";
   const displayState = ref<DisplayState>("menu");
@@ -106,8 +123,20 @@
   //     displayState.value = "question";
   //   }
   // };
-
+  const db = firebase.firestore()
   const playAgain = () => {
+    const date = new Date();
+    date.toString();
+    db.collection("result").add({
+      score: correctCount.value,
+      when: date,
+    })
+    .then((doc) => {
+      console.log(`追加成功`);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
     displayState.value = "menu";
     quizIndex.value = 0;
     correctCount.value = 0;
