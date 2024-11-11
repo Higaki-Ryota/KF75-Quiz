@@ -1,14 +1,14 @@
 <template>
     <div class="optionSet">
-      <a-question-option v-for="(option, i) in quizData.options" :key="i" :index="i" :text="option" :color="backgroundColor[i]" @click="emit('select', i)" />
+      <a-question-option v-for="i in 4" :key="i" :index="i - 1" :color="backgroundColor[i-1]" :level="level" :quizNumber="quizNumber" @click="emit('select', i)" />
     </div>
   </template>
   
   <script setup lang="ts">
-  import type { QuizData } from "../composables/quizData";
 
     type Props = {
-      quizData: QuizData;
+      quizNumber: number;
+      level:number;
     };
     type Emit = {
       (event: "select", index: number): void;
@@ -18,4 +18,8 @@
     const backgroundColor = ["#CC0033", "#555EBA", "#DD8D1F", "#5CAD42"];
   </script>
   
-  <style scoped lang="scss"></style>
+  <style scoped lang="scss">
+    .optionSet{
+      display:flex;
+    }
+  </style>

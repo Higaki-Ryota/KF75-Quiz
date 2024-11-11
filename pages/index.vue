@@ -2,8 +2,7 @@
   <div>
     <a-background />
     <t-menu v-if="displayState === 'menu'" @select="onLevelSelected" :Levels=Levels></t-menu>
-    <t-question v-else-if="displayState === 'question' || displayState === 'answer'" :count="count" :quiz-data="shuffledQuizData[quizIndex]" :index="quizIndex" :correctNumber="correctCount" :answerState="answerState" :answerDisplay="answerDisplay" @select="onSelected" @timeout="timeout" />
-    <!-- <t-answer v-else-if="displayState === 'answer'" :is-final="quizIndex === shuffledQuizData.length" :quiz-data="shuffledQuizData[quizIndex]" :answer-state="answerState" @select="onNext" /> -->
+    <t-question v-else-if="displayState === 'question'" :count="count" :correctIndex="quizData[quizLevel][shuffledNumber[quizIndex]]" :quizIndex="quizIndex" :quizNumber=shuffledNumber[quizIndex] :level="quizLevel" :correctNumber="correctCount" :answerState="answerState" :answerDisplay="answerDisplay" @select="onSelected" @timeout="timeout" />
     <t-result v-else-if="displayState === 'result'" :correct-count="correctCount" @select="playAgain" />
   </div>
 </template>
@@ -33,12 +32,15 @@
   type DisplayState = "question" | "result" | "menu";
   const displayState = ref<DisplayState>("menu");
 
+  const randomIndex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+  const shuffledNumber = ref(getRandomArray(randomIndex, 21));
+
   const quizLevel= ref(0);
-  const Levels = ["初級", "中級", "上級"];
+  const Levels = ["小中学生向け", "高校生向け", "大学生以上向け"];
   const onLevelSelected = (level:number) => {
     quizLevel.value = level;
     displayState.value = "question";
-    shuffledQuizData.value = getRandomArray(quizData[quizLevel.value], 21)
+    shuffledNumber.value = getRandomArray(randomIndex, 21);
     count.value = 60;
     questionTime.value = Date.now();
     setTimeout(() => {displayState.value = "result"}, 60000);
@@ -46,8 +48,7 @@
 
   const quizIndex = ref(0);
   const correctCount = ref(0);
-  const shuffledQuizData = ref(getRandomArray(quizData[quizLevel.value], 21));
-  const answerState = ref<"正解！" | "不正解" | "時間切れ">(null as any);
+  const answerState = ref<"正解！" | "不正解" >(null as any);
 
   const count=ref(60);
   const countdown = () => {
@@ -61,24 +62,6 @@
   onMounted(() => {
     countdown();
   })
-  // const countdown = () => {
-  //   if (count.value > 0) {
-  //     count.value--;
-  //   } else {
-  //     clearInterval(timer);
-  //     // emit("timeout");
-  //   }
-  // };
-
-  // let timer;
-
-  // const timer = () => {
-  //   setInterval(countdown, 1000);
-  // }
-
-  // onMounted(() => {
-  //   timer = setInterval(countdown, 1000);
-  // });
 
   const answerDisplay = ref(false);
   const questionTime = ref(0);
@@ -110,6 +93,7 @@
     };
   };
 
+
   // const timeout = () => {
   //   answerState.value = "時間切れ";
   //   displayState.value = "answer";
@@ -124,6 +108,7 @@
   //   }
   // };
   const db = firebase.firestore()
+
   const playAgain = () => {
     const date = new Date();
     date.toString();
@@ -140,6 +125,6 @@
     displayState.value = "menu";
     quizIndex.value = 0;
     correctCount.value = 0;
-    shuffledQuizData.value = getRandomArray(quizData[quizLevel.value], 21);
+    shuffledNumber.value = getRandomArray(randomIndex, 21);
   };
 </script>
