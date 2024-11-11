@@ -43,11 +43,6 @@
     shuffledNumber.value = getRandomArray(randomIndex, 21);
     count.value = 60;
     questionTime.value = Date.now();
-    setInterval(() => {
-      if (count.value <= incorrectCount.value*5){
-        displayState.value = "result"
-      }
-    } , 5000);
   }
 
   const quizIndex = ref(0);
@@ -58,9 +53,13 @@
   const count=ref(60);
   const countdown = () => {
     setInterval(() => {
-      if (count.value > 0) {
+      if (displayState.value === "question" || count.value > 0) {
         count.value--;
-      }
+      };
+      if (count.value <= incorrectCount.value*5){
+        displayState.value = "result"
+        count.value = 60;
+      };
     }, 1000);
   };
 
@@ -82,8 +81,9 @@
       } else {
         incorrectCount.value++;
         answerState.value = "不正解";
-        if (count.value < incorrectCount.value * 5){
+        if (count.value <= incorrectCount.value * 5){
           displayState.value = "result";
+          count.value = 60;
         };
       }
       if (answerTime.value < questionTime.value + 2000) {
