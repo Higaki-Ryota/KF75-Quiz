@@ -2,7 +2,7 @@
   <div>
     <a-background />
     <t-menu v-if="displayState === 'menu'" @select="onLevelSelected" :Levels=Levels></t-menu>
-    <t-question v-else-if="displayState === 'question'" :count="count" :correctIndex="quizData[quizLevel][shuffledNumber[quizIndex]]" :quizIndex="quizIndex" :quizNumber=shuffledNumber[quizIndex] :level="quizLevel" :correctNumber="correctCount" :answerState="answerState" :answerDisplay="answerDisplay" @select="onSelected" @timeout="timeout" />
+    <t-question v-else-if="displayState === 'question'" :count="count - incorrectCount*5" :correctIndex="quizData[quizLevel][shuffledNumber[quizIndex]]" :quizIndex="quizIndex" :quizNumber=shuffledNumber[quizIndex] :level="quizLevel" :correctNumber="correctCount" :answerState="answerState" :answerDisplay="answerDisplay" @select="onSelected" @timeout="timeout" />
     <t-result v-else-if="displayState === 'result'" :correct-count="correctCount" @select="playAgain" />
   </div>
 </template>
@@ -43,11 +43,16 @@
     shuffledNumber.value = getRandomArray(randomIndex, 21);
     count.value = 60;
     questionTime.value = Date.now();
-    setTimeout(() => {displayState.value = "result"}, 60000);
+    setInterval(() => {
+      if (count.value <= incorrectCount.value*5){
+        displayState.value = "result"
+      }
+    } , 5000);
   }
 
   const quizIndex = ref(0);
   const correctCount = ref(0);
+  const incorrectCount = ref(0);
   const answerState = ref<"正解！" | "不正解" >(null as any);
 
   const count=ref(60);
@@ -75,7 +80,11 @@
         correctCount.value++;
         answerState.value = "正解！";
       } else {
+        incorrectCount.value++;
         answerState.value = "不正解";
+        if (count.value < incorrectCount.value * 5){
+          displayState.value = "result";
+        };
       }
       if (answerTime.value < questionTime.value + 2000) {
         setTimeout(() => {
@@ -94,19 +103,6 @@
   };
 
 
-  // const timeout = () => {
-  //   answerState.value = "時間切れ";
-  //   displayState.value = "answer";
-  // };
-
-  // const onNext = () => {
-  //   if (quizIndex.value === shuffledQuizData.value.length - 1) {
-  //     displayState.value = "result";
-  //   } else {
-  //     quizIndex.value++;
-  //     displayState.value = "question";
-  //   }
-  // };
   const db = firebase.firestore()
 
   const playAgain = () => {
@@ -125,6 +121,7 @@
     displayState.value = "menu";
     quizIndex.value = 0;
     correctCount.value = 0;
+    incorrectCount.value = 0;
     shuffledNumber.value = getRandomArray(randomIndex, 21);
   };
 </script>
