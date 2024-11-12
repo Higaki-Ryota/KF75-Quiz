@@ -53,7 +53,7 @@
   const count=ref(60);
   const countdown = () => {
     setInterval(() => {
-      if (displayState.value === "question" || count.value > 0) {
+      if (displayState.value === "question" && count.value > 0) {
         count.value--;
       };
       if (count.value <= incorrectCount.value*5){
