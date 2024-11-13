@@ -1,6 +1,6 @@
   <template>
-      <div>
-        <span class="header">現在の正解数：</span>
+      <div class="collectNumber">
+        <span>正解数：</span>
         <span>{{ correctNumber }}問</span>
       </div>
   </template>
@@ -12,5 +12,15 @@
     };
     const props = defineProps<Props>();
   </script>
-  
-  <style scoped lang="scss"></style>
+  .collectNumber{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  <style scoped lang="scss">
+  .collectNumber{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  </style>
