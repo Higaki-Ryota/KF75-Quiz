@@ -1,5 +1,5 @@
   <template>
-    <div>
+    <div class="times">
       <div class="count">残り
       <span class="time">{{ count }}</span>
       秒</div>
@@ -14,4 +14,10 @@
   const props =defineProps<Props>();
   </script>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+  .times{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+</style>

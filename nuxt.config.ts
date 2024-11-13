@@ -4,6 +4,7 @@ import { join } from 'path'
 
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
+  css:["@/assets/styles/common.scss"],
   hooks: {
     'generate:done'() {
       const distDir = join(process.cwd(), 'docs')

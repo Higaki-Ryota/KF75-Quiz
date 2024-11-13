@@ -1,9 +1,9 @@
 <template>
-    <div>
-      <span class="correct">正解数</span>
+    <div class="score">
+      <span class="correct">最終結果：</span>
       <span class="bunshi"
         ><span class="correctcount">{{ correctCount }}</span
-        >問</span
+        >問正解</span
       >
     </div>
   </template>
@@ -15,4 +15,11 @@
     const props = defineProps<Props>();
   </script>
   
-  <style scoped lang="scss"></style>
+  <style scoped lang="scss">
+    .score{
+      display:flex;
+      font-size:45px;
+      padding:30px;
+      justify-content: center;
+    }
+  </style>

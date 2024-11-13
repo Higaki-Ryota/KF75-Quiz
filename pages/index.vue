@@ -109,6 +109,7 @@
     const date = new Date();
     date.toString();
     db.collection("result").add({
+      level:quizLevel.value,
       score: correctCount.value,
       when: date,
     })
