@@ -36,7 +36,7 @@
   const shuffledNumber = ref(getRandomArray(randomIndex, 21));
 
   const quizLevel= ref(0);
-  const Levels = [["初級", "（小中学生向け）", "制限時間：60秒"],["中級","（大学生向け）","制限時間：60秒"],["上級","（大学生向け）","制限時間：60秒"]];
+  const Levels = [["初級", "（小中学生向け）", "制限時間：60秒"],["中級","（高校生向け）","制限時間：60秒"],["上級","（大学生向け）","制限時間：60秒"]];
   const onLevelSelected = (level:number) => {
     quizLevel.value = level;
     displayState.value = "question";
