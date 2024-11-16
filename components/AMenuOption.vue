@@ -1,5 +1,7 @@
 <template>
-    <div class="level_wrap">{{level}}</div>
+    <div class="level_wrap">
+        <div class="text">{{level[0]}}<br>{{level[1]}}<br>{{level[2]}}</div>
+    </div>
 </template>
 <script setup lang="ts">
 type Props = {
@@ -15,6 +17,9 @@ type Props = {
     margin:20px 0 20px 0;
     background-color: white;
     text-align:center;
+    display:grid;
+    place-content:center;
     font-size:30px;
+    cursor:pointer;
 }
 </style>

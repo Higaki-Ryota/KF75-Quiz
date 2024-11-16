@@ -12,11 +12,6 @@
     };
     const props = defineProps<Props>();
   </script>
-  .collectNumber{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   <style scoped lang="scss">
   .collectNumber{
     display: flex;

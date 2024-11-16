@@ -1,11 +1,7 @@
 <template>
     <div>
       <div class="option">
-        <p>
-          <span>{{ ABCD[index] }}</span
-          >
-        </p>
-        <img :src="images[level+'-'+quizNumber+'-'+index+'.jpeg']" />
+        <img :src="images[level+'-s-'+imageIndex+'.webp']" />
       </div>
     </div>
   </template>
@@ -16,15 +12,16 @@
     type Props = {
       index: number;
       color: string;
-      level:number;
-      quizNumber:number;
+      level: number;
+      imageIndex: number;
     };
     const props = defineProps<Props>();
-  
-    const ABCD = ["A", "B", "C", "D"];
   </script>
   <style scoped lang="scss">
+    .option{
+      cursor:pointer;
+    }
     img{
-      height:100px;
+      width:100%;
     }
   </style>
