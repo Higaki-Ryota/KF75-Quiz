@@ -7,7 +7,7 @@
 </template>
 <script setup lang="ts">
     type Props ={
-        Levels:string[];
+        Levels:string[][];
     };
     const props = defineProps<Props>();
     type Emit = {

@@ -1,6 +1,6 @@
 <template>
     <div class="question">
-      <img :src="images[level+'-'+quizNumber+'-q.jpeg']" />
+      <img :src="images[level+'-q-'+quizNumber+'.webp']" />
     </div>
   </template>
   
@@ -16,6 +16,6 @@
   
   <style scoped lang="scss">
     img{
-      height:100px;
+      width:100%;
     }
   </style>

@@ -2,7 +2,7 @@
   <div>
     <a-background />
     <t-menu v-if="displayState === 'menu'" @select="onLevelSelected" :Levels=Levels></t-menu>
-    <t-question v-else-if="displayState === 'question'" :count="count - incorrectCount*5" :correctIndex="quizData[quizLevel][shuffledNumber[quizIndex]]" :quizIndex="quizIndex" :quizNumber=shuffledNumber[quizIndex] :level="quizLevel" :correctNumber="correctCount" :answerState="answerState" :answerDisplay="answerDisplay" @select="onSelected" @timeout="timeout" />
+    <t-question v-else-if="displayState === 'question'" :count="count - incorrectCount*5" :correctIndex="quizData[quizLevel][shuffledNumber[quizIndex]]" :quizIndex="quizIndex" :quizNumber=shuffledNumber[quizIndex] :level="quizLevel" :correctNumber="correctCount" :answerState="answerState" :answerDisplay="answerDisplay" :answerIndex="shuffledNumber[quizIndex] * 4 + quizData[quizLevel][shuffledNumber[quizIndex]] + 1" :correctDisplay="correctDisplay" :incorrectDisplay="incorrectDisplay" @select="onSelected" @timeout="timeout" />
     <t-result v-else-if="displayState === 'result'" :correct-count="correctCount" @select="playAgain" />
   </div>
 </template>
@@ -36,7 +36,7 @@
   const shuffledNumber = ref(getRandomArray(randomIndex, 21));
 
   const quizLevel= ref(0);
-  const Levels = ["小中学生向け", "高校生向け", "大学生以上向け"];
+  const Levels = [["初級", "（小中学生向け）", "制限時間：60秒"],["中級","（大学生向け）","制限時間：60秒"],["上級","（大学生向け）","制限時間：60秒"]];
   const onLevelSelected = (level:number) => {
     quizLevel.value = level;
     displayState.value = "question";
@@ -68,6 +68,8 @@
   })
 
   const answerDisplay = ref(false);
+  const correctDisplay = ref(false);
+  const incorrectDisplay = ref(false);
   const questionTime = ref(0);
   const answerTime = ref(0);
 
@@ -78,9 +80,11 @@
       if (isCorrect) {
         correctCount.value++;
         answerState.value = "正解！";
+        correctDisplay.value = true;
       } else {
         incorrectCount.value++;
         answerState.value = "不正解";
+        incorrectDisplay.value = true;
         if (count.value <= incorrectCount.value * 5){
           displayState.value = "result";
           count.value = 60;
@@ -91,12 +95,16 @@
           quizIndex.value++;
           questionTime.value = Date.now();
           answerDisplay.value = false;
+          correctDisplay.value = false;
+          incorrectDisplay.value = false;
         }, 3000 + questionTime.value - answerTime.value);
       } else {
         setTimeout(() => {
           quizIndex.value++;
           questionTime.value = Date.now();
           answerDisplay.value = false;
+          correctDisplay.value = false;
+          incorrectDisplay.value = false;
         }, 1000);
       };
     };
