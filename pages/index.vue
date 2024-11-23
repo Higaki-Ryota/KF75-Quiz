@@ -46,7 +46,7 @@
     shuffledNumber.value = [getRandomArray(randomIndex[0], 21), getRandomArray(randomIndex[1], 21), getRandomArray(randomIndex[2], 21)];
     count.value = 60;
     questionTime.value = Date.now();
-    db.collection("kf75").where('level', '==',quizLevel.value ).get().then((docs) => {
+    db.collection("kf75").where('level', '==',quizLevel.value ).where('when.day','==',23).get().then((docs) => {
       if (docs) {
         docs.forEach(doc => {ranking.value.push(doc.data())})
       }            
