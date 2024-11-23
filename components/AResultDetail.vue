@@ -6,7 +6,7 @@
       </div>
       <div class="ranking">
         <div class="ranking-wrap">
-          <div class="rank-head">現在の高得点</div>
+          <div class="rank-head">今日の高得点</div>
           <table>
             <tr class="green">
               <th style="width:15vw">スコア</th><th style="width:35vw">プレイ時刻</th>
