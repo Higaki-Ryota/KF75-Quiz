@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "firebase": "^11.0.1",
+    "katex": "^0.16.22",
     "nuxt": "^3.12.4",
     "vue": "latest"
   },
