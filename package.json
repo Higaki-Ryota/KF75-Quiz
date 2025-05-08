@@ -10,15 +10,24 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@babel/helpers": "^7.27.1",
+    "@nuxt/vite-builder": "^3.17.2",
+    "cross-spawn": "^7.0.6",
+    "esbuild": "^0.25.4",
     "firebase": "^11.0.1",
     "katex": "^0.16.22",
-    "nuxt": "^3.12.4",
+    "nanoid": "^5.1.5",
+    "nuxt": "^3.17.2",
+    "parse-git-config": "^3.0.0",
+    "undici": "^7.8.0",
+    "vite": "^6.3.5",
     "vue": "latest"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
     "@types/eslint": "^9.6.0",
     "@types/node": "^22.7.5",
+    "@types/parse-git-config": "^3",
     "@types/prettier": "^3.0.0",
     "@typescript-eslint/eslint-plugin": "^8.1.0",
     "@typescript-eslint/parser": "^8.1.0",
