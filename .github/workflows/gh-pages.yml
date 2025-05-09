@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: "18" # 使用しているNode.jsのバージョンを指定
+          node-version: "24" # 使用しているNode.jsのバージョンを指定
 
       - name: Install dependencies
         run: yarn install # Yarnで依存関係をインストール
