@@ -12,7 +12,7 @@ type Props = {
 <style scoped lang="scss">
 .level_wrap{
     border:4px,solid,#519935;
-    width:35vw;
+    width:30vw;
     height:24vh;
     margin:20px 0 20px 0;
     background-color: white;

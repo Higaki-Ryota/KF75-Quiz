@@ -2,7 +2,7 @@
     <div>
       <a-background />
       <t-menu v-if="displayState === 'menu'" @select="onLevelSelected" :Levels=Levels></t-menu>
-      <t-question v-else-if="displayState === 'question'" :count="10000000" :correctIndex="quizData[quizLevel][quizIndex]" :quizIndex="quizIndex" :quizNumber=quizIndex :level="quizLevel" :correctNumber="correctCount" :answerState="answerState" :answerDisplay="answerDisplay" :answerIndex="quizIndex * 4 + quizData[quizLevel][quizIndex] + 1" :correctDisplay="correctDisplay" :incorrectDisplay="incorrectDisplay" @select="onSelected" @timeout="timeout" />
+      <t-question v-else-if="displayState === 'question'" :count="10000000" :correctIndex="quizData[quizLevel][quizIndex].answer" :quizIndex="quizIndex" :quizNumber=quizIndex :correctNumber="correctCount" :answerDisplay="answerDisplay" :correctDisplay="correctDisplay" :incorrectDisplay="incorrectDisplay" :question="quizData[quizLevel][quizIndex].question" :options="quizData[quizLevel][quizIndex].options" :fontSize="quizData[quizLevel][quizIndex].fontSize" :answer="quizData[quizLevel][quizIndex].options[quizData[quizLevel][quizIndex].answer]" @select="onSelected" @timeout="timeout" />
       <t-result v-else-if="displayState === 'result'" :correct-count="correctCount" @select="playAgain" />
     </div>
   </template>
@@ -33,7 +33,7 @@
     const displayState = ref<DisplayState>("menu");
   
     const quizLevel= ref(0);
-    const Levels = [["初級", "（小中学生向け）", "制限時間：60秒"],["中級","（高校生向け）","制限時間：60秒"],["上級","（大学生向け）","制限時間：60秒"]];
+    const Levels = [["6級", "小中学生初級", "制限時間：60秒"],["5級","小中学生上級","制限時間：60秒"],["4級","高校生初級","制限時間：60秒"],["3級", "高校生上級", "制限時間：60秒"],["2級","大学生初級","制限時間：60秒"],["1級","大学生上級","制限時間：60秒"]];
     const onLevelSelected = (level:number) => {
       quizLevel.value = level;
       displayState.value = "question";
@@ -94,4 +94,4 @@
       correctCount.value = 0;
       incorrectCount.value = 0;
     };
-  </script>
+</script>

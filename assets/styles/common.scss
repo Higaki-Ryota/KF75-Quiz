@@ -3,3 +3,16 @@ body{
     background-color: #f5ffeb;
     font-family: serif;
 }
+@font-face {
+  font-family: 'Latin Modern Math';
+  src: url('@/assets/fonts/latinmodern-math.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.katex {
+  font-family: 'Latin Modern Math', serif !important;
+  font-weight: normal !important;
+  font-size: 1em !important;
+  line-height: 2rem !important;
+}

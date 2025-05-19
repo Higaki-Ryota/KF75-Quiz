@@ -2,7 +2,7 @@
   <div>
     <a-background />
     <t-menu v-if="displayState === 'menu'" @select="onLevelSelected" :Levels=Levels></t-menu>
-    <t-question v-else-if="displayState === 'question'" :count="count - incorrectCount*5" :correctIndex="quizData[quizLevel][shuffledNumber[quizLevel][quizIndex]]" :quizIndex="quizIndex" :quizNumber=shuffledNumber[quizLevel][quizIndex] :level="quizLevel" :correctNumber="correctCount" :answerState="answerState" :answerDisplay="answerDisplay" :answerIndex="shuffledNumber[quizLevel][quizIndex] * 4 + quizData[quizLevel][shuffledNumber[quizLevel][quizIndex]] + 1" :correctDisplay="correctDisplay" :incorrectDisplay="incorrectDisplay" @select="onSelected" @timeout="timeout" />
+    <t-question v-else-if="displayState === 'question'" :count="count - incorrectCount*5" :correctIndex="quizData[quizLevel][shuffledNumber[quizLevel][quizIndex]].answer" :quizIndex="quizIndex" :quizNumber=shuffledNumber[quizLevel][quizIndex] :correctNumber="correctCount" :answerDisplay="answerDisplay" :correctDisplay="correctDisplay" :incorrectDisplay="incorrectDisplay" :question="quizData[quizLevel][shuffledNumber[quizLevel][quizIndex]].question" :options="quizData[quizLevel][shuffledNumber[quizLevel][quizIndex]].options" :fontSize="quizData[quizLevel][shuffledNumber[quizLevel][quizIndex]].fontSize" :answer="quizData[quizLevel][shuffledNumber[quizLevel][quizIndex]].options[quizData[quizLevel][shuffledNumber[quizLevel][quizIndex]].answer]" @select="onSelected" @timeout="timeout" />
     <t-result v-else-if="displayState === 'result'" :correct-count="correctCount" :ranking="ranking_view" @select="playAgain" />
   </div>
 </template>
@@ -33,17 +33,18 @@
   type DisplayState = "question" | "result" | "menu";
   const displayState = ref<DisplayState>("menu");
 
-  const randomIndex = [Array.from({length: quizData[0].length}, (_,i) => i), Array.from({length: quizData[1].length}, (_,i) => i), Array.from({length: quizData[2].length}, (_,i) => i)]
-  const shuffledNumber = ref([getRandomArray(randomIndex[0], 21), getRandomArray(randomIndex[1], 21), getRandomArray(randomIndex[2], 21)]);
+  const randomIndex = quizData.map(qs => Array.from({ length: qs.length }, (_, i) => i));
+  const shuffledNumber = ref(randomIndex.map(arr => getRandomArray(arr, arr.length)));
+  // const shuffledNumber = ref([getRandomArray(randomIndex[0], 21), getRandomArray(randomIndex[1], 21), getRandomArray(randomIndex[2], 21)]);
 
   const quizLevel= ref(0);
-  const Levels = [["初級", "（小中学生向け）", "制限時間：60秒"],["中級","（高校生向け）","制限時間：60秒"],["上級","（大学生向け）","制限時間：60秒"]];
+  const Levels = [["6級", "小中学生初級", "制限時間：60秒"],["5級","小中学生上級","制限時間：60秒"],["4級","高校生初級","制限時間：60秒"],["3級", "高校生上級", "制限時間：60秒"],["2級","大学生初級","制限時間：60秒"],["1級","大学生上級","制限時間：60秒"]];
   const ranking=ref([]);
   const ranking_view=ref([]);
   const onLevelSelected = (level:number) => {
     quizLevel.value = level;
     displayState.value = "question";
-    shuffledNumber.value = [getRandomArray(randomIndex[0], 21), getRandomArray(randomIndex[1], 21), getRandomArray(randomIndex[2], 21)];
+    shuffledNumber.value = randomIndex.map(arr => getRandomArray(arr, arr.length));
     count.value = 60;
     questionTime.value = Date.now();
     db.collection("kf75").where('level', '==',quizLevel.value ).where('when.day','==',24).get().then((docs) => {
@@ -225,7 +226,7 @@
     quizIndex.value = 0;
     correctCount.value = 0;
     incorrectCount.value = 0;
-    shuffledNumber.value = [getRandomArray(randomIndex[0], 21), getRandomArray(randomIndex[1], 21), getRandomArray(randomIndex[2], 21)];
+    shuffledNumber.value = randomIndex.map(arr => getRandomArray(arr, arr.length));
     ranking.value=[];
     ranking_view.value=[];
   };

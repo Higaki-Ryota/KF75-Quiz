@@ -4,7 +4,10 @@ import { join } from 'path'
 
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
-  css:["@/assets/styles/common.scss", 'katex/dist/katex.min.css'],
+  css:[ 'katex/dist/katex.min.css', "@/assets/styles/common.scss"],
+  vite: {
+    assetsInclude: ['**/*.woff2']
+  },
   hooks: {
     'generate:done'() {
       const distDir = join(process.cwd(), 'docs')
@@ -22,6 +25,6 @@ export default defineNuxtConfig({
   },
   ssr: false,
   app: {
-    baseURL: '/KF75-Quiz/'
+    baseURL: '/KF75-Quiz/',
   }
 });

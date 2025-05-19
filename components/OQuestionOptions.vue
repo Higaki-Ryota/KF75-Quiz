@@ -1,14 +1,14 @@
 <template>
     <div class="optionSet">
-      <a-question-option v-for="i in 4" :key="i" :index="i - 1" :imageIndex="quizNumber * 4 + i" :color="backgroundColor[i-1]" :level="level" @click="emit('select', i)" class="option"/>
+      <a-question-option v-for="i in 4" :key="i" :index="i - 1" :option="options[i - 1]" :fontSize="fontSize" @click="emit('select', i)" class="option"/>
     </div>
   </template>
   
   <script setup lang="ts">
 
     type Props = {
-      quizNumber: number;
-      level:number;
+      options: string[];
+      fontSize: string;
     };
     type Emit = {
       (event: "select", index: number): void;
