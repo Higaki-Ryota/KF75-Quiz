@@ -10,9 +10,9 @@
       </div>
       <div class="answer-black" v-if="answerDisplay"></div>
       <div class="question-wrapper">
-        <a-question-text :quizNumber="quizNumber + 1" :level="level" class="text"/>
-        <o-question-options :quizNumber="quizNumber" :level="level" @select="onSelected" class="option"/>
-        <a-question-answer :answerState="answerState" :answerIndex="answerIndex" :level="level" class="answer" v-if="answerDisplay"/>
+        <a-question-text :question="question" class="text"/>
+        <o-question-options :options="options" :fontSize="fontSize" @select="onSelected" class="option"/>
+        <a-question-answer :answer="answer" :fontSize="fontSize" class="answer" v-if="answerDisplay"/>
         <a-question-circle class="circle" v-if="correctDisplay"/>
         <a-question-cross class="cross" v-if="incorrectDisplay"/>
       </div>
@@ -24,15 +24,19 @@
     type Props = {
       count: number;
       correctNumber: number;
-      answerState: string;
+      // answerState: string;
       answerDisplay: boolean;
       correctDisplay: boolean;
       incorrectDisplay: boolean;
-      level:number;
+      // level:number;
       correctIndex: number;
       quizIndex: number;
       quizNumber: number;
-      answerIndex: number;
+      // answerIndex: number;
+      question: string;
+      options: string[];
+      fontSize: string;
+      answer: string;
     };
     type Emit = {
       (event: "select", isCorrect: boolean): void;

@@ -1,27 +1,40 @@
 <template>
     <div>
       <div class="option">
-        <img :src="images[level+'-s-'+imageIndex+'.webp']" />
+        <ka-te-x-renderer
+          :expression="option"
+          :displayMode="true"
+          :class="fontSize"
+        />
       </div>
     </div>
   </template>
   
   <script setup lang="ts">
-    import images from "@/lib/assets";
 
     type Props = {
-      index: number;
-      color: string;
-      level: number;
-      imageIndex: number;
+      option: string;
+      fontSize: string;
     };
     const props = defineProps<Props>();
-  </script>
+    </script>
+
   <style scoped lang="scss">
     .option{
       cursor:pointer;
+      background-color: white;
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    img{
-      width:100%;
+    .small {
+      font-size: 20px;
+    }
+    .medium {
+      font-size: 30px;
+    }
+    .big{
+      font-size: 45px;
     }
   </style>

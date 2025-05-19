@@ -3,18 +3,19 @@
       <div class= "wrapper">
         <!-- <div class="answerState">{{ answerState }}</div> -->
         <div class="answer">正解は</div>
-        <img :src="images[level+'-s-'+answerIndex+'.webp']" />
+        <ka-te-x-renderer
+          :expression="answer"
+          :displayMode="true"
+          :class="fontSize"
+        />
       </div>
     </div>
   </template>
   
   <script setup lang="ts">
-    import images from "@/lib/assets";
-
     type Props = {
-      answerState: string;
-      level : number;
-      answerIndex : number;
+      answer: string;
+      fontSize: string;
     };
     const props = defineProps<Props>();
   </script>
@@ -28,8 +29,17 @@
       text-align:center;
       font-size:30px;
     }
-    img{
-      height:15vh;
-      margin-top:1vh;
+    .answer{
+      font-size: 30px;
+      margin-top: 10px;
+    }
+    .small {
+      font-size: 20px;
+    }
+    .medium {
+      font-size: 30px;
+    }
+    .big{
+      font-size: 45px;
     }
   </style>

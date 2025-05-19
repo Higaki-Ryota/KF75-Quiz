@@ -18,9 +18,11 @@
   
   <style scoped lang="scss">
   .level-position{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display:grid;
+    place-content:center;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
   }
   </style>
