@@ -2,7 +2,7 @@
   <div>
     <a-background />
     <t-menu v-if="displayState === 'menu'" @select="onLevelSelected" :Levels=Levels></t-menu>
-    <t-question v-else-if="displayState === 'question'" :count="count - incorrectCount*5" :correctIndex="quizData[quizLevel][shuffledNumber[quizLevel][quizIndex]].answer" :quizIndex="quizIndex" :quizNumber=shuffledNumber[quizLevel][quizIndex] :correctNumber="correctCount" :answerDisplay="answerDisplay" :correctDisplay="correctDisplay" :incorrectDisplay="incorrectDisplay" :question="quizData[quizLevel][shuffledNumber[quizLevel][quizIndex]].question" :options="quizData[quizLevel][shuffledNumber[quizLevel][quizIndex]].options" :fontSize="quizData[quizLevel][shuffledNumber[quizLevel][quizIndex]].fontSize" :answer="quizData[quizLevel][shuffledNumber[quizLevel][quizIndex]].options[quizData[quizLevel][shuffledNumber[quizLevel][quizIndex]].answer]" @select="onSelected" @timeout="timeout" />
+    <t-question v-else-if="displayState === 'question'" :count="count - incorrectCount*5" :correctIndex="quizData[quizLevel][shuffledNumber[quizLevel][quizIndex]].answer" :quizIndex="quizIndex" :quizNumber=shuffledNumber[quizLevel][quizIndex] :correctNumber="correctCount" :answerDisplay="answerDisplay" :correctDisplay="correctDisplay" :incorrectDisplay="incorrectDisplay" :question="quizData[quizLevel][shuffledNumber[quizLevel][quizIndex]].question" :options="quizData[quizLevel][shuffledNumber[quizLevel][quizIndex]].options" :fontSize="quizData[quizLevel][shuffledNumber[quizLevel][quizIndex]].fontSize" :answer="quizData[quizLevel][shuffledNumber[quizLevel][quizIndex]].options[quizData[quizLevel][shuffledNumber[quizLevel][quizIndex]].answer]" @select="onSelected" @timeout="timeout" @quit="onQuit" />
     <t-result v-else-if="displayState === 'result'" :correct-count="correctCount" :ranking="ranking_view" @select="playAgain" />
   </div>
 </template>
@@ -228,6 +228,15 @@
     incorrectCount.value = 0;
     shuffledNumber.value = randomIndex.map(arr => getRandomArray(arr, arr.length));
     ranking.value=[];
-    ranking_view.value=[];
+    // ranking_view.value=[];
+  };
+
+  // Add this handler for the quit event
+  const onQuit = () => {
+    displayState.value = "menu";
+    quizIndex.value = 0;
+    correctCount.value = 0;
+    incorrectCount.value = 0;
+    shuffledNumber.value = randomIndex.map(arr => getRandomArray(arr, arr.length));
   };
 </script>
