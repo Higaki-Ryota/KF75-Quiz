@@ -50,7 +50,28 @@
     const incorrectDisplay = ref(false);
     const questionTime = ref(0);
     const answerTime = ref(0);
-  
+  import { onMounted } from 'vue';
+
+  onMounted(() => {
+    const hash = window.location.hash;
+    const match = hash.match(/#question=\((\d+),(\d+)\)/);
+    if (match) {
+      const i = parseInt(match[1], 10);
+      const j = parseInt(match[2], 10);
+      if (
+        i >= 1 &&
+        i <= 6 &&
+        quizData[6-i] &&
+        j >= 1 &&
+        j < quizData[6-i].length + 1
+      ) {
+        quizLevel.value = 6 - i;
+        quizIndex.value = j - 1;
+        displayState.value = "question";
+        questionTime.value = Date.now();
+      }
+    }
+  });
     const onSelected = (isCorrect: boolean) => {
       if (answerDisplay.value === false) {
         answerTime.value = Date.now();
