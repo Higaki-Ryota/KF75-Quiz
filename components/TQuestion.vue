@@ -9,12 +9,15 @@
         </div>
       </div>
       <div class="answer-black" v-if="answerDisplay"></div>
+      <div class="wrapper">
+      <a-question-quit @click="quit()" class="quit-btn"/>
       <div class="question-wrapper">
         <a-question-text :question="question" class="text"/>
         <o-question-options :options="options" :fontSize="fontSize" @select="onSelected" class="option"/>
         <a-question-answer :answer="answer" :fontSize="fontSize" class="answer" v-if="answerDisplay"/>
         <a-question-circle class="circle" v-if="correctDisplay"/>
         <a-question-cross class="cross" v-if="incorrectDisplay"/>
+      </div>
       </div>
     </o-popup>
   </template>
@@ -41,6 +44,7 @@
     type Emit = {
       (event: "select", isCorrect: boolean): void;
       (event: "timeout"): void;
+      (event: "quit"): void;
     };
     const props = defineProps<Props>();
     const emit = defineEmits<Emit>();
@@ -51,6 +55,10 @@
   
     const timeout = () => {
       emit("timeout");
+    };
+
+    const quit = () => {
+      emit("quit");
     };
   </script>
   
@@ -81,11 +89,10 @@
       height:75vh;
       margin-top:5vh;
       margin-bottom:5vh;
-      margin-right:auto;
-      margin-left:auto;
       display:flex;
       flex-direction:column;
       position: relative;
+      padding-right:150px;
     }
     .option{
       width:100%;
@@ -100,7 +107,7 @@
     .answer-black{
       position: absolute;
       width:100%;
-      height:85%;
+      height:100%;
       background-color:black;
       opacity:0.2;
       z-index:1;
@@ -127,5 +134,10 @@
       top: 70%;
       left: 50%;
       transform: translate(-50%, 0);
+    }
+    .wrapper{
+      display:flex;
+      width:100%;
+      justify-content: center;
     }
   </style>

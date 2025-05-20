@@ -2,7 +2,7 @@
     <div>
       <a-background />
       <t-menu v-if="displayState === 'menu'" @select="onLevelSelected" :Levels=Levels></t-menu>
-      <t-question v-else-if="displayState === 'question'" :count="10000000" :correctIndex="quizData[quizLevel][quizIndex].answer" :quizIndex="quizIndex" :quizNumber=quizIndex :correctNumber="correctCount" :answerDisplay="answerDisplay" :correctDisplay="correctDisplay" :incorrectDisplay="incorrectDisplay" :question="quizData[quizLevel][quizIndex].question" :options="quizData[quizLevel][quizIndex].options" :fontSize="quizData[quizLevel][quizIndex].fontSize" :answer="quizData[quizLevel][quizIndex].options[quizData[quizLevel][quizIndex].answer]" @select="onSelected" @timeout="timeout" />
+      <t-question v-else-if="displayState === 'question'" :count="10000000" :correctIndex="quizData[quizLevel][quizIndex].answer" :quizIndex="quizIndex" :quizNumber=quizIndex :correctNumber="correctCount" :answerDisplay="answerDisplay" :correctDisplay="correctDisplay" :incorrectDisplay="incorrectDisplay" :question="quizData[quizLevel][quizIndex].question" :options="quizData[quizLevel][quizIndex].options" :fontSize="quizData[quizLevel][quizIndex].fontSize" :answer="quizData[quizLevel][quizIndex].options[quizData[quizLevel][quizIndex].answer]" @select="onSelected" @timeout="timeout" @quit="onQuit"/>
       <t-result v-else-if="displayState === 'result'" :correct-count="correctCount" @select="playAgain" />
     </div>
   </template>
@@ -50,7 +50,28 @@
     const incorrectDisplay = ref(false);
     const questionTime = ref(0);
     const answerTime = ref(0);
-  
+  import { onMounted } from 'vue';
+
+  onMounted(() => {
+    const hash = window.location.hash;
+    const match = hash.match(/#question=\((\d+),(\d+)\)/);
+    if (match) {
+      const i = parseInt(match[1], 10);
+      const j = parseInt(match[2], 10);
+      if (
+        i >= 1 &&
+        i <= 6 &&
+        quizData[6-i] &&
+        j >= 1 &&
+        j < quizData[6-i].length + 1
+      ) {
+        quizLevel.value = 6 - i;
+        quizIndex.value = j - 1;
+        displayState.value = "question";
+        questionTime.value = Date.now();
+      }
+    }
+  });
     const onSelected = (isCorrect: boolean) => {
       if (answerDisplay.value === false) {
         answerTime.value = Date.now();
@@ -94,4 +115,11 @@
       correctCount.value = 0;
       incorrectCount.value = 0;
     };
+
+  const onQuit = () => {
+    displayState.value = "menu";
+    quizIndex.value = 0;
+    correctCount.value = 0;
+    incorrectCount.value = 0;
+  };
 </script>
