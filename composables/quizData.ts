@@ -1510,7 +1510,7 @@ export const quizData = [
     },
     {
       "quizNumber": 23,
-      "question": "\\int_0^{\\pi/2} \\frac{\\sin x}{\\sin x+\\cos x} dx の値は？",
+      "question": "\\int_0^{\\frac{\\pi}{2}} \\frac{\\sin x}{\\sin x+\\cos x} dx の値は？",
       "options": [
         "\\frac{\\pi}{4}",
         "\\frac{\\pi}{2}",
@@ -1922,10 +1922,10 @@ export const quizData = [
       "quizNumber": 19,
       "question": "f:\\mathbb{R}^3\\to\\mathbb{R}とする。\\\\次のうちラプラシアンと等しいのは？",
       "options": [
-        "\\div (\\rot f)",
-        "\\div (\\nabla f)",
-        "\\rot (\\nabla f)",
-        "\\nabla(\\rot f)"
+        "div (rot f)",
+        "div (\\nabla f)",
+        "rot (\\nabla f)",
+        "\\nabla(rot f)"
       ],
       "answer": 1,
       "fontSize": "medium"

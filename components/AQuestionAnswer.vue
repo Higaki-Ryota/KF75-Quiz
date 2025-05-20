@@ -24,7 +24,7 @@
     .wrapper{
       border:4px,solid,#519935;
       width:35vw;
-      height:24vh;
+      height:30vh;
       background-color: white;
       text-align:center;
       font-size:30px;
