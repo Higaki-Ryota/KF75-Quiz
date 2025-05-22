@@ -124,7 +124,7 @@ export const quizData = [
     },
     {
       "quizNumber": 10,
-      "question": "1+\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}+\\ldots+\\frac{1}{1024}に一番近い整数は？",
+      "question": "1+\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}+\\cdots+\\frac{1}{1024}に一番近い整数は？",
       "options": [
         "1",
         "2",
@@ -268,11 +268,11 @@ export const quizData = [
     },
     {
       "quizNumber": 22,
-      "question": "2つの三角形が合同でないのは？",
+      "question": "2つの三角形が合同とは限らないのは？",
       "options": [
         "3つの辺の長さが等しい",
         "2つの辺の長さとその間の角の\\\\大きさが等しい",
-        "2つの角とその間の辺の\\\\長さが等しい",
+        "2つの角の大きさとその間の辺の\\\\長さが等しい",
         "3つの角の大きさが等しい"
       ],
       "answer": 3,
@@ -347,7 +347,7 @@ export const quizData = [
         "(3,4)",
         "交点は存在しない"
       ],
-      "answer": 0,
+      "answer": 1,
       "fontSize": "medium"
     },
     {
@@ -558,7 +558,7 @@ export const quizData = [
     },
     {
       "quizNumber": 12,
-      "question": "1～100の整数のうち、約数が偶数個なものは\\\\いくつある？",
+      "question": "1～100の整数のうち、正の約数が偶数個なものは\\\\いくつある？",
       "options": [
         "50",
         "70",
@@ -692,10 +692,10 @@ export const quizData = [
       "quizNumber": 23,
       "question": "この検定において当てずっぽうで\\\\10問連続正答する確率は？",
       "options": [
-        "約0.1%",
-        "約0.0001%",
-        "約0.0000000001%",
-        "ほぼ100%"
+        "約0.1\\%",
+        "約0.0001\\%",
+        "約0.0000000001\\%",
+        "ほぼ100\\%"
       ],
       "answer": 1,
       "fontSize": "small"
@@ -879,7 +879,7 @@ export const quizData = [
         "A",
         "B"
       ],
-      "answer": 0,
+      "answer": 1,
       "fontSize": "big"
     },
     {
@@ -889,7 +889,7 @@ export const quizData = [
         "\\frac{\\pi}{360}度",
         "\\frac{360}{\\pi}度",
         "\\frac{\\pi}{180}度",
-        "\\frac{360}{\\pi}度"
+        "\\frac{180}{\\pi}度"
       ],
       "answer": 3,
       "fontSize": "medium"
@@ -932,7 +932,7 @@ export const quizData = [
     },
     {
       "quizNumber": 10,
-      "question": "数列\\{103-3n\\}の初項から第n項までの和が\\\\最大となるnはいくつ？",
+      "question": "n\\geq 1に対しa_n = 103-3nで定まる数列\\{a_n\\}の初項から\\\\第n項までの和が最大となるnはいくつ？",
       "options": [
         "15",
         "34",
@@ -980,14 +980,14 @@ export const quizData = [
     },
     {
       "quizNumber": 14,
-      "question": "2^{2024}の一の位は？",
+      "question": "2^{2025}の一の位は？",
       "options": [
         "2",
         "4",
         "6",
         "8"
       ],
-      "answer": 2,
+      "answer": 0,
       "fontSize": "big"
     },
     {
@@ -1016,7 +1016,7 @@ export const quizData = [
     },
     {
       "quizNumber": 17,
-      "question": "x^3+2x^2+3x+4=0の全ての解の和は？",
+      "question": "x^3+2x^2+3x+4=0の全ての複素数解の和は？",
       "options": [
         "-4",
         "-2",
@@ -1052,7 +1052,7 @@ export const quizData = [
     },
     {
       "quizNumber": 20,
-      "question": "f(x)=4(x+1)^3のとき、f'(1)は？",
+      "question": "f(x)=4(x+1)^3のとき、f^\\prime(1)は？",
       "options": [
         "-24",
         "0",
@@ -1088,7 +1088,7 @@ export const quizData = [
     },
     {
       "quizNumber": 23,
-      "question": "Xを確率変数とし、a,bを定数とする。\\\\aX+bの分散V[aX+b]と等しいものは？",
+      "question": "Xを確率変数とし、その分散をV[X]とする。\\\\a,bを定数とする。aX+bの分散と等しいものは？",
       "options": [
         "aV[X]",
         "aV[X]+b",
@@ -1212,7 +1212,7 @@ export const quizData = [
       "options": [
         "y=x e^x",
         "y=\\sin x",
-        "y=[x]\\\\(ガウス関数)",
+        "y=[x]\\\\([\\;]はガウス記号)",
         "y=x \\tan x"
       ],
       "answer": 3,
@@ -1250,7 +1250,7 @@ export const quizData = [
       "options": [
         "x\\log x",
         "\\frac{x}{\\tan x}",
-        "e^{\\frac{1}{x}}",
+        "\\frac{e^x-1}{x}}",
         "\\frac{\\log x}{\\sqrt{x}}"
       ],
       "answer": 3,
@@ -1426,7 +1426,7 @@ export const quizData = [
     },
     {
       "quizNumber": 16,
-      "question": "座標空間内の相異なる4点O,A,B,Cについて, \\\\\\overrightarrow{\\mathrm{OA}}, \\overrightarrow{\\mathrm{OB}}, \\overrightarrow{\\mathrm{OC}}が1次従属であるものは？",
+      "question": "座標空間内の相異なる4点O,A,B,Cについて, \\\\\\overrightarrow{\\mathrm{OA}}, \\overrightarrow{\\mathrm{OB}}, \\overrightarrow{\\mathrm{OC}}が1次独立とは限らないものは？",
       "options": [
         "4点O,A,B,Cが \\\\同一平面上にない",
         "\\overrightarrow{\\mathrm{OA}}と\\overrightarrow{\\mathrm{OB}}が一次独立かつ\\\\ \\overrightarrow{\\mathrm{OB}}と\\overrightarrow{\\mathrm{OC}}が一次独立かつ\\\\ \\overrightarrow{\\mathrm{OC}}と\\overrightarrow{\\mathrm{OA}}が一次独立",
@@ -1517,7 +1517,7 @@ export const quizData = [
         "\\frac12",
         "1"
       ],
-      "answer": 1,
+      "answer": 0,
       "fontSize": "medium"
     },
     {
@@ -1582,7 +1582,7 @@ export const quizData = [
     },
     {
       "quizNumber": 29,
-      "question": "\\alpha = \\cos\\left(\\frac{2\\pi}{2025}\\right) + i\\sin\\left(\\frac{2\\pi}{2025}\\right) とする。\\\\\n\\sum_{n=1}^{2024} a^n =？",
+      "question": "\\alpha = \\cos\\left(\\frac{2\\pi}{2025}\\right) + i\\sin\\left(\\frac{2\\pi}{2025}\\right) とする。\\\\\n\\sum_{n=1}^{2024} \\alpha ^n =？",
       "options": [
         "1",
         "\\alpha",
@@ -1642,31 +1642,31 @@ export const quizData = [
     },
     {
       "quizNumber": 34,
-      "question": "0.01%の確率で当たるくじを10000回引いたとき、\\\\1回も当たらない確率はどのくらい?",
+      "question": "0.01\\%の確率で当たるくじを10000回引いたとき、\\\\1回も当たらない確率はどのくらい?",
       "options": [
-        "1％",
-        "37％",
-        "50％",
-        "63％"
+        "1\\％",
+        "37\\％",
+        "50\\％",
+        "63\\％"
       ],
       "answer": 1,
       "fontSize": "big"
     },
     {
       "quizNumber": 35,
-      "question": "0.02％の確率で当たるくじを10000回引いたとき、\\\\1回も当たらない確率はどのくらい?",
+      "question": "0.02\\％の確率で当たるくじを10000回引いたとき、\\\\1回も当たらない確率はどのくらい?",
       "options": [
-        "2％",
-        "14％",
-        "37％",
-        "50％"
+        "2\\％",
+        "14\\％",
+        "37\\％",
+        "50\\％"
       ],
       "answer": 1,
       "fontSize": "big"
     },
     {
       "quizNumber": 36,
-      "question": "10!には約数が270個あります。\\\\では、11!には約数はいくつある?",
+      "question": "10!には正の約数が270個あります。\\\\では、11!には正の約数はいくつある?",
       "options": [
         "270",
         "540",
@@ -1752,7 +1752,7 @@ export const quizData = [
     },
     {
       "quizNumber": 5,
-      "question": "微分方程式 y'' + y' + y = 0 の一般解は?\\\\(A, Bは定数)",
+      "question": "微分方程式 y^\\prime^\\prime + y^\\prime + y = 0 の一般解は?\\\\(A, Bは定数)",
       "options": [
         "y = A \\sin t + B \\cos t",
         "y = Ae^{-\\frac{1}{2}t} \\sin \\frac{\\sqrt{3}}{2}t \\\\+ Be^{-\\frac{1}{2}t} \\cos \\frac{\\sqrt{3}}{2}t",
@@ -1767,7 +1767,7 @@ export const quizData = [
       "question": "次の4つの集合で, 濃度が他と異なるものは?",
       "options": [
         "実数全体の集合",
-        "有理数から{0,1}への\\\\写像全体の集合",
+        "有理数全体の集合から\\{0,1\\}への\\\\写像全体の集合",
         "代数的数全体の集合",
         "無理数全体の集合"
       ],
@@ -1932,7 +1932,7 @@ export const quizData = [
     },
     {
       "quizNumber": 20,
-      "question": "x \\to 0で\\frac{sinx - (ax + bx^3) }{x^5}が\\\\有限実数値に収束するようなa, b \\in \\mathbb{R}は？ ",
+      "question": "x \\to 0で\\frac{\\sinx - (ax + bx^3) }{x^5}が\\\\有限実数値に収束するようなa, b \\in \\mathbb{R}は？ ",
       "options": [
         "a=1, b=-\\frac{1}{6}",
         "a=1, b=\\frac{1}{2}",
@@ -1961,7 +1961,7 @@ export const quizData = [
         "\\frac{x^3-y^3}{x^2+y^2}",
         "\\frac{x^2y^2}{x^2+y^2}",
         "\\frac{xy^2}{\\sqrt{x^2+y^2}}",
-        "\\frac{\\ln{1+x^2y^2}}{x^2y^2}"
+        "\\frac{\\ln(1+x^2y^2)}{x^2y^2}"
       ],
       "answer": 0,
       "fontSize": "medium"
@@ -1995,7 +1995,7 @@ export const quizData = [
       "question": "微分方程式 y'' + 2y' + y = 0 の一般解は?\\\\(A, Bは定数)",
       "options": [
         "y = A \\sin t + B \\cos t",
-        "y = (Ax+B)e^{-t}",
+        "y = (At+B)e^{-t}",
         "ABe^{-t}",
         "y = A e^t + B e^{-t}"
       ],
@@ -2009,7 +2009,7 @@ export const quizData = [
         "ユニタリ行列",
         "エルミート行列",
         "歪エルミート行列",
-        "正定値行列"
+        "正則行列"
       ],
       "answer": 3,
       "fontSize": "small"
@@ -2126,17 +2126,17 @@ export const quizData = [
       "quizNumber": 36,
       "question": "3つの線型独立なベクトルa,b,cで張られる\\\\平行六面体の体積を表す式として正しいものは?",
       "options": [
-        "|(a・b)・c|",
-        "|(a・b)×c|",
-        "|(a×b)・c|",
-        "|(a・b)×c|"
+        "|(a\\cdot b)\\cdot c|",
+        "|(a\\cdot b)\\times c|",
+        "|(a\\times b)\\cdot c|",
+        "|(a\\times b)\\times c|"
       ],
       "answer": 2,
       "fontSize": "big"
     },
     {
       "quizNumber": 37,
-      "question": "次のうち、R全域で定義されるのはどれ?",
+      "question": "次のうち、\\mathbb{R}全域で定義されるのはどれ?",
       "options": [
         "\\csc",
         "\\sec",
@@ -2198,7 +2198,7 @@ export const quizData = [
     },
     {
       "quizNumber": 4,
-      "question": "コインを100回投げて表が出る回数の\\\\ 95\\%信頼区間はだいたいどれくらい？",
+      "question": "通常のコインを100回投げて表が出る回数の\\\\ 95\\%信頼区間はだいたいどれくらい？",
       "options": [
         "[40,5, 50.5]",
         "[49,51]",
@@ -2263,7 +2263,7 @@ export const quizData = [
         "f_n(x)=|x|^{\\frac1n}",
         "f_n(x)=\\left(x+\\frac1n \\right)^{2}",
         "f_n(x)=\\sin\\left(x+\\frac1n \\right)",
-        "f_n(x)=\\sin\\left(x+\\frac1n \\right)"
+        "f_n(x)=\\sin\\left(x+n \\right)"
       ],
       "answer": 2,
       "fontSize": "medium"
@@ -2273,7 +2273,7 @@ export const quizData = [
       "question": "次のうち収束する無限和は？",
       "options": [
         "\\displaystyle\\sum_{n=1}^\\infty \\frac{1}{\\sqrt{n}}",
-        "\\displaystyle\\sum_{n=1}^\\infty \\frac{1}{n\\log n}",
+        "\\displaystyle\\sum_{n=2}^\\infty \\frac{1}{n\\log n}",
         "\\displaystyle\\sum_{n=1}^\\infty \\frac{\\log n}{n}",
         "\\displaystyle\\sum_{n=1}^\\infty \\frac{(-1)^n}{\\sqrt[4]{n}}"
       ],
@@ -2546,7 +2546,7 @@ export const quizData = [
     },
     {
       "quizNumber": 33,
-      "question": "\\mathrm{M}_n(\\mathbb{C})に標準的位相を入れる。冪例行列全体\\\\の成す部分空間は、1. 連結か？2. コンパクトか？",
+      "question": "\\mathrm{M}_n(\\mathbb{C})に標準的位相を入れる。冪零行列全体\\\\の成す部分空間は、1. 連結か？2. コンパクトか？",
       "options": [
         "1. YES, 2. YES",
         "1. YES, 2. NO",
@@ -2714,7 +2714,7 @@ export const quizData = [
     },
     {
       "quizNumber": 47,
-      "question": "平面R^2に通常の位相を入れるとき, \\\\開かつ閉集合はいくつある?",
+      "question": "平面\\mathbb{R}^2に通常の位相を入れるとき, \\\\開かつ閉集合はいくつある?",
       "options": [
         "0",
         "1",
