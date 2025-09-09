@@ -17,17 +17,17 @@ jobs:
       # リポジトリのチェックアウト
       - uses: actions/checkout@v3
 
-      # Node のセットアップ
+      # Node のセットアップ（.nvmrc に従う）
       - uses: actions/setup-node@v3
         with:
-          node-version: 18       # Nuxt 3 推奨
-          cache: "npm"
+          node-version-file: .nvmrc
+          cache: "yarn"
 
-      # 依存関係インストール
-      - run: npm ci --legacy-peer-deps
+      # Yarn 依存関係インストール
+      - run: yarn install --immutable
 
       # ビルド
-      - run: npm run build
+      - run: yarn build
 
       # テスト（あれば）
-      - run: npm test || echo "テストなしでも続行"
+      - run: yarn test || echo "テストなしでも続行"
