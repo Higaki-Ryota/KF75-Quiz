@@ -5518,7 +5518,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vue@npm:^9.17.0, eslint-plugin-vue@npm:^9.23.0, eslint-plugin-vue@npm:^9.27.0, eslint-plugin-vue@npm:^9.4.0":
+"eslint-plugin-vue@npm:^10.4.0":
+  version: 10.4.0
+  resolution: "eslint-plugin-vue@npm:10.4.0"
+  dependencies:
+    "@eslint-community/eslint-utils": ^4.4.0
+    natural-compare: ^1.4.0
+    nth-check: ^2.1.1
+    postcss-selector-parser: ^6.0.15
+    semver: ^7.6.3
+    xml-name-validator: ^4.0.0
+  peerDependencies:
+    "@typescript-eslint/parser": ^7.0.0 || ^8.0.0
+    eslint: ^8.57.0 || ^9.0.0
+    vue-eslint-parser: ^10.0.0
+  peerDependenciesMeta:
+    "@typescript-eslint/parser":
+      optional: true
+  checksum: 030fff2fe35f94b76ab64b44ae05371bf5e3024d86dcd85ab244b632b095f594aeb7dbb586f4978a90a41745167cac11caf04cf303c7bc86c52c7e6febc5889c
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-vue@npm:^9.17.0, eslint-plugin-vue@npm:^9.23.0, eslint-plugin-vue@npm:^9.4.0":
   version: 9.33.0
   resolution: "eslint-plugin-vue@npm:9.33.0"
   dependencies:
@@ -8021,7 +8042,7 @@ __metadata:
     esbuild: ^0.25.9
     eslint: ^9.9.0
     eslint-plugin-nuxt: ^4.0.0
-    eslint-plugin-vue: ^9.27.0
+    eslint-plugin-vue: ^10.4.0
     firebase: ^11.0.1
     katex: ^0.16.22
     nanoid: ^5.1.5
