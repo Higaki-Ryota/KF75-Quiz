@@ -24,7 +24,7 @@ jobs:
           cache: "npm"
 
       # 依存関係インストール
-      - run: npm ci
+      - run: npm ci --legacy-peer-deps
 
       # ビルド
       - run: npm run build
