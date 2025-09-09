@@ -15,7 +15,7 @@ jobs:
 
     steps:
       # リポジトリのチェックアウト
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
 
       # Node のセットアップ（.nvmrc に従う）
       - uses: actions/setup-node@v3
