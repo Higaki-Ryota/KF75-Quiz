@@ -9,6 +9,9 @@ updates:
     open-pull-requests-limit: 10
     allow:
       - dependency-type: all     # dependencies, devDependencies, transitive 全部
+    ignore:
+      - dependency-name: "vue-template-compiler"
+        versions: ["*"]          # 全バージョンを無視
 
   # GitHub Actions の依存関係も更新
   - package-ecosystem: github-actions
