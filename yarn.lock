@@ -8027,7 +8027,7 @@ __metadata:
     nanoid: ^5.1.5
     nuxt: ^4.1.1
     parse-git-config: ^3.0.0
-    prettier: ^3.3.3
+    prettier: ^3.6.2
     sass-embedded: ^1.77.8
     tmp: ^0.2.5
     typescript: ^5.5.4
@@ -9098,7 +9098,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:*, prettier@npm:^3.3.3":
+"prettier@npm:*, prettier@npm:^3.6.2":
   version: 3.6.2
   resolution: "prettier@npm:3.6.2"
   bin:
