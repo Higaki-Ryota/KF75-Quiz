@@ -1,0 +1,17 @@
+# .github/dependabot.yml
+version: 2
+updates:
+  # npm / yarn の依存関係をチェック
+  - package-ecosystem: npm
+    directory: "/"              # package.json がある場所
+    schedule:
+      interval: daily           # 毎日チェック（weekly, monthly も可）
+    open-pull-requests-limit: 10
+    allow:
+      - dependency-type: direct # 直接依存のみ。外部ライブラリ全部対象にするなら削除
+
+  # GitHub Actions のワークフロー依存も更新
+  - package-ecosystem: github-actions
+    directory: "/"
+    schedule:
+      interval: weekly
