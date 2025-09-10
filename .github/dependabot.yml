@@ -1,20 +1,22 @@
-# .github/dependabot.yml
 version: 2
 updates:
-  # npm / yarn の依存関係をチェック
   - package-ecosystem: npm
-    directory: "/"               # package.json の場所
-    schedule:
-      interval: daily            # 毎日チェック
-    open-pull-requests-limit: 10
-    allow:
-      - dependency-type: all     # dependencies, devDependencies, transitive 全部
-    ignore:
-      - dependency-name: "vue-template-compiler"
-        versions: ["*"]          # 全バージョンを無視
-
-  # GitHub Actions の依存関係も更新
-  - package-ecosystem: github-actions
     directory: "/"
     schedule:
-      interval: weekly
+      interval: daily
+    open-pull-requests-limit: 5
+    groups:
+      eslint-deps:
+        patterns:
+          - "eslint*"
+          - "@typescript-eslint/*"
+      vue-nuxt:
+        patterns:
+          - "nuxt"
+          - "vue*"
+          - "@vue/*"
+      tooling:
+        patterns:
+          - "vite*"
+          - "vitest*"
+          - "typescript"
