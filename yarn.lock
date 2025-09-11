@@ -5894,7 +5894,7 @@ sass-embedded-win32-x64@1.92.1:
   version "1.92.1"
   resolved "https://registry.yarnpkg.com/sass-embedded-win32-x64/-/sass-embedded-win32-x64-1.92.1.tgz#bd0f8cefef62d88122ffd77ae549c7a2df5cd212"
 
-sass-embedded@^1.77.8:
+sass-embedded@^1.92.1:
   version "1.92.1"
   resolved "https://registry.yarnpkg.com/sass-embedded/-/sass-embedded-1.92.1.tgz#f00d2a9de5cd89621b1bd25cdb09825ee7387114"
   dependencies:
