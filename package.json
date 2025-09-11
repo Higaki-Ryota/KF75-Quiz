@@ -12,7 +12,7 @@
     "test": "vitest"
   },
   "dependencies": {
-    "@nuxt/vite-builder": "^3.17.2",
+    "@nuxt/vite-builder": "^4.1.1",
     "firebase": "^12.2.1",
     "katex": "^0.16.22",
     "nanoid": "^5.1.5",
