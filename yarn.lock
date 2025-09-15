@@ -1005,6 +1005,33 @@
     unimport "^5.2.0"
     untyped "^2.0.0"
 
+"@nuxt/kit@4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-4.1.2.tgz#e2d8d6ed1b6a5c2964a9a4a66af04e943b3002ca"
+  dependencies:
+    c12 "^3.2.0"
+    consola "^3.4.2"
+    defu "^6.1.4"
+    destr "^2.0.5"
+    errx "^0.1.0"
+    exsolve "^1.0.7"
+    ignore "^7.0.5"
+    jiti "^2.5.1"
+    klona "^2.0.6"
+    mlly "^1.8.0"
+    ohash "^2.0.11"
+    pathe "^2.0.3"
+    pkg-types "^2.3.0"
+    rc9 "^2.1.2"
+    scule "^1.3.0"
+    semver "^7.7.2"
+    std-env "^3.9.0"
+    tinyglobby "^0.2.15"
+    ufo "^1.6.1"
+    unctx "^2.4.1"
+    unimport "^5.2.0"
+    untyped "^2.0.0"
+
 "@nuxt/kit@^3.15.4", "@nuxt/kit@^3.18.1":
   version "3.19.1"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-3.19.1.tgz#7d3e44c213a322bea3a85748adc4c4e7edec12bd"
@@ -1061,7 +1088,7 @@
     rc9 "^2.1.2"
     std-env "^3.8.1"
 
-"@nuxt/vite-builder@4.1.1", "@nuxt/vite-builder@^4.1.1":
+"@nuxt/vite-builder@4.1.1":
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/@nuxt/vite-builder/-/vite-builder-4.1.1.tgz#2b426b067de20d71dda6aa0fb172df349380b80b"
   dependencies:
@@ -1091,6 +1118,40 @@
     ufo "^1.6.1"
     unenv "^2.0.0-rc.19"
     vite "^7.1.4"
+    vite-node "^3.2.4"
+    vite-plugin-checker "^0.10.3"
+    vue-bundle-renderer "^2.1.2"
+
+"@nuxt/vite-builder@^4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@nuxt/vite-builder/-/vite-builder-4.1.2.tgz#d74d6207424e144b4af3519708db1e934ec1cb12"
+  dependencies:
+    "@nuxt/kit" "4.1.2"
+    "@rollup/plugin-replace" "^6.0.2"
+    "@vitejs/plugin-vue" "^6.0.1"
+    "@vitejs/plugin-vue-jsx" "^5.1.1"
+    autoprefixer "^10.4.21"
+    consola "^3.4.2"
+    cssnano "^7.1.1"
+    defu "^6.1.4"
+    esbuild "^0.25.9"
+    escape-string-regexp "^5.0.0"
+    exsolve "^1.0.7"
+    get-port-please "^3.2.0"
+    h3 "^1.15.4"
+    jiti "^2.5.1"
+    knitwork "^1.2.0"
+    magic-string "^0.30.19"
+    mlly "^1.8.0"
+    mocked-exports "^0.1.1"
+    pathe "^2.0.3"
+    pkg-types "^2.3.0"
+    postcss "^8.5.6"
+    rollup-plugin-visualizer "^6.0.3"
+    std-env "^3.9.0"
+    ufo "^1.6.1"
+    unenv "^2.0.0-rc.21"
+    vite "^7.1.5"
     vite-node "^3.2.4"
     vite-plugin-checker "^0.10.3"
     vue-bundle-renderer "^2.1.2"
@@ -4580,7 +4641,7 @@ magic-string-ast@^1.0.0:
   dependencies:
     magic-string "^0.30.17"
 
-magic-string@^0.30.12, magic-string@^0.30.17, magic-string@^0.30.18, magic-string@^0.30.3:
+magic-string@^0.30.12, magic-string@^0.30.17, magic-string@^0.30.18, magic-string@^0.30.19, magic-string@^0.30.3:
   version "0.30.19"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.30.19.tgz#cebe9f104e565602e5d2098c5f2e79a77cc86da9"
   dependencies:
@@ -6608,7 +6669,7 @@ unenv@2.0.0-rc.20:
     pathe "^2.0.3"
     ufo "^1.6.1"
 
-unenv@^2.0.0-rc.19:
+unenv@^2.0.0-rc.19, unenv@^2.0.0-rc.21:
   version "2.0.0-rc.21"
   resolved "https://registry.yarnpkg.com/unenv/-/unenv-2.0.0-rc.21.tgz#cc6082ef32370eb7098cb2f86ca7af3ef4c2c49f"
   dependencies:
