@@ -978,33 +978,6 @@
     which "^5.0.0"
     ws "^8.18.3"
 
-"@nuxt/kit@4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-4.1.1.tgz#8e67ceccd8d49f054ccdffcf2e6c2fe224698258"
-  dependencies:
-    c12 "^3.2.0"
-    consola "^3.4.2"
-    defu "^6.1.4"
-    destr "^2.0.5"
-    errx "^0.1.0"
-    exsolve "^1.0.7"
-    ignore "^7.0.5"
-    jiti "^2.5.1"
-    klona "^2.0.6"
-    mlly "^1.8.0"
-    ohash "^2.0.11"
-    pathe "^2.0.3"
-    pkg-types "^2.3.0"
-    rc9 "^2.1.2"
-    scule "^1.3.0"
-    semver "^7.7.2"
-    std-env "^3.9.0"
-    tinyglobby "^0.2.14"
-    ufo "^1.6.1"
-    unctx "^2.4.1"
-    unimport "^5.2.0"
-    untyped "^2.0.0"
-
 "@nuxt/kit@4.1.2":
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/@nuxt/kit/-/kit-4.1.2.tgz#e2d8d6ed1b6a5c2964a9a4a66af04e943b3002ca"
@@ -1060,14 +1033,15 @@
     unimport "^5.2.0"
     untyped "^2.0.0"
 
-"@nuxt/schema@4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@nuxt/schema/-/schema-4.1.1.tgz#947934a8c14a54d2e5fc7e439ac74ec279bba411"
+"@nuxt/schema@4.1.2":
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/@nuxt/schema/-/schema-4.1.2.tgz#21b52fb21451eb6c7b9aecd2dd95864cb7fa15dd"
   dependencies:
-    "@vue/shared" "^3.5.20"
+    "@vue/shared" "^3.5.21"
     consola "^3.4.2"
     defu "^6.1.4"
     pathe "^2.0.3"
+    pkg-types "^2.3.0"
     std-env "^3.9.0"
     ufo "1.6.1"
 
@@ -1088,41 +1062,7 @@
     rc9 "^2.1.2"
     std-env "^3.8.1"
 
-"@nuxt/vite-builder@4.1.1":
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/@nuxt/vite-builder/-/vite-builder-4.1.1.tgz#2b426b067de20d71dda6aa0fb172df349380b80b"
-  dependencies:
-    "@nuxt/kit" "4.1.1"
-    "@rollup/plugin-replace" "^6.0.2"
-    "@vitejs/plugin-vue" "^6.0.1"
-    "@vitejs/plugin-vue-jsx" "^5.1.1"
-    autoprefixer "^10.4.21"
-    consola "^3.4.2"
-    cssnano "^7.1.1"
-    defu "^6.1.4"
-    esbuild "^0.25.9"
-    escape-string-regexp "^5.0.0"
-    exsolve "^1.0.7"
-    get-port-please "^3.2.0"
-    h3 "^1.15.4"
-    jiti "^2.5.1"
-    knitwork "^1.2.0"
-    magic-string "^0.30.18"
-    mlly "^1.8.0"
-    mocked-exports "^0.1.1"
-    pathe "^2.0.3"
-    pkg-types "^2.3.0"
-    postcss "^8.5.6"
-    rollup-plugin-visualizer "^6.0.3"
-    std-env "^3.9.0"
-    ufo "^1.6.1"
-    unenv "^2.0.0-rc.19"
-    vite "^7.1.4"
-    vite-node "^3.2.4"
-    vite-plugin-checker "^0.10.3"
-    vue-bundle-renderer "^2.1.2"
-
-"@nuxt/vite-builder@^4.1.2":
+"@nuxt/vite-builder@4.1.2", "@nuxt/vite-builder@^4.1.2":
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/@nuxt/vite-builder/-/vite-builder-4.1.2.tgz#d74d6207424e144b4af3519708db1e934ec1cb12"
   dependencies:
@@ -1180,195 +1120,195 @@
     eslint-plugin-vue "^9.7.0"
     local-pkg "^0.4.2"
 
-"@oxc-minify/binding-android-arm64@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-android-arm64/-/binding-android-arm64-0.86.0.tgz#9264269738d1c07b4af48a9444bec7c3bfed004b"
+"@oxc-minify/binding-android-arm64@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-android-arm64/-/binding-android-arm64-0.87.0.tgz#f689f1aea24094b54dd298d0652c24f0cc1c6340"
 
-"@oxc-minify/binding-darwin-arm64@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-darwin-arm64/-/binding-darwin-arm64-0.86.0.tgz#21b7cd45c3e24d890e24eaa1181eebb92994d1c8"
+"@oxc-minify/binding-darwin-arm64@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-darwin-arm64/-/binding-darwin-arm64-0.87.0.tgz#97f474f63fe301ede9f2b3733848e3a5a3ffb9e9"
 
-"@oxc-minify/binding-darwin-x64@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-darwin-x64/-/binding-darwin-x64-0.86.0.tgz#ffc0aadf7d81014109f0fb566176e85008877327"
+"@oxc-minify/binding-darwin-x64@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-darwin-x64/-/binding-darwin-x64-0.87.0.tgz#a666cac191c803305614e134d5515a8aa66077c8"
 
-"@oxc-minify/binding-freebsd-x64@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-freebsd-x64/-/binding-freebsd-x64-0.86.0.tgz#4a5db09196afe982cfcb2d015696ee349fa1df62"
+"@oxc-minify/binding-freebsd-x64@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-freebsd-x64/-/binding-freebsd-x64-0.87.0.tgz#bc5316c1223bf27c3cc469241c6cfea38787dd70"
 
-"@oxc-minify/binding-linux-arm-gnueabihf@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-0.86.0.tgz#aafb5018b620c8824b838e9e36418e486c6741d2"
+"@oxc-minify/binding-linux-arm-gnueabihf@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-0.87.0.tgz#038999b79b357c3b14514c021e03fbba6b7cd035"
 
-"@oxc-minify/binding-linux-arm-musleabihf@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-linux-arm-musleabihf/-/binding-linux-arm-musleabihf-0.86.0.tgz#b507240455042d96851060a882c46656bcac140b"
+"@oxc-minify/binding-linux-arm-musleabihf@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-linux-arm-musleabihf/-/binding-linux-arm-musleabihf-0.87.0.tgz#d22dfe4737a241cd640447c9da98140bf5a714a5"
 
-"@oxc-minify/binding-linux-arm64-gnu@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-0.86.0.tgz#f293554d67ee1fdcf0499afc6c5fc0b19ab05fb6"
+"@oxc-minify/binding-linux-arm64-gnu@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-0.87.0.tgz#c0903a9296ee57fbf69c24d06fb95d22bf09a78a"
 
-"@oxc-minify/binding-linux-arm64-musl@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-linux-arm64-musl/-/binding-linux-arm64-musl-0.86.0.tgz#86a39bbb116bf8476a11d726c69637822c53f67e"
+"@oxc-minify/binding-linux-arm64-musl@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-linux-arm64-musl/-/binding-linux-arm64-musl-0.87.0.tgz#c648cc86b5bf8b63f43b6602a69e878f2198a7aa"
 
-"@oxc-minify/binding-linux-riscv64-gnu@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-linux-riscv64-gnu/-/binding-linux-riscv64-gnu-0.86.0.tgz#a9fd650a59238c0957424adf7011eef1f34fee0b"
+"@oxc-minify/binding-linux-riscv64-gnu@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-linux-riscv64-gnu/-/binding-linux-riscv64-gnu-0.87.0.tgz#c6f3eafbd3883247ccd6b6c8aaff77a9d1707d24"
 
-"@oxc-minify/binding-linux-s390x-gnu@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-0.86.0.tgz#8416f4641f3487d96f1ca912d5ceeb721a60042c"
+"@oxc-minify/binding-linux-s390x-gnu@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-0.87.0.tgz#1c3bf3fd439b2efca774f5e81152e0dc00748a67"
 
-"@oxc-minify/binding-linux-x64-gnu@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-linux-x64-gnu/-/binding-linux-x64-gnu-0.86.0.tgz#273f74f6777a286a4edf6c4dc5bcfb7a138f9ff9"
+"@oxc-minify/binding-linux-x64-gnu@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-linux-x64-gnu/-/binding-linux-x64-gnu-0.87.0.tgz#448c34c967f79513b131d9c683a8bdb4adc02a07"
 
-"@oxc-minify/binding-linux-x64-musl@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-linux-x64-musl/-/binding-linux-x64-musl-0.86.0.tgz#c7c9fcc55e6deacc9aa686074530d8171da0fbd6"
+"@oxc-minify/binding-linux-x64-musl@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-linux-x64-musl/-/binding-linux-x64-musl-0.87.0.tgz#c9550a23f9fdc4ad7a5071a6869d1de3e36f9ce5"
 
-"@oxc-minify/binding-wasm32-wasi@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-wasm32-wasi/-/binding-wasm32-wasi-0.86.0.tgz#398de844bad2dfeec3ba5138f1e569b50e766bad"
+"@oxc-minify/binding-wasm32-wasi@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-wasm32-wasi/-/binding-wasm32-wasi-0.87.0.tgz#5006b900a12194eef1258ba945bf11ea3e9408cc"
   dependencies:
     "@napi-rs/wasm-runtime" "^1.0.3"
 
-"@oxc-minify/binding-win32-arm64-msvc@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-0.86.0.tgz#69b7c21d41f839d42fbd77827120b2837884aea6"
+"@oxc-minify/binding-win32-arm64-msvc@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-0.87.0.tgz#4234de2f9784800c87d8a27d6c831debd964abcb"
 
-"@oxc-minify/binding-win32-x64-msvc@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-win32-x64-msvc/-/binding-win32-x64-msvc-0.86.0.tgz#1870ce5329e8c6e4680add616d5553d5da85f4ce"
+"@oxc-minify/binding-win32-x64-msvc@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-minify/binding-win32-x64-msvc/-/binding-win32-x64-msvc-0.87.0.tgz#cc26ff0033ec5fb55434fe6dec99e9b209203eb8"
 
-"@oxc-parser/binding-android-arm64@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-android-arm64/-/binding-android-arm64-0.86.0.tgz#e7f293983cd83f9f2649a1a945b1f2bb16e97b47"
+"@oxc-parser/binding-android-arm64@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-android-arm64/-/binding-android-arm64-0.87.0.tgz#7e875dae4fdcc9a4ae3dcfb6c1c5d0530b228cdb"
 
-"@oxc-parser/binding-darwin-arm64@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-darwin-arm64/-/binding-darwin-arm64-0.86.0.tgz#8ed525559bdb11393b149e927f53059d572e871b"
+"@oxc-parser/binding-darwin-arm64@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-darwin-arm64/-/binding-darwin-arm64-0.87.0.tgz#381247b78fcaa680434833c9cb7ed3ad684f6513"
 
-"@oxc-parser/binding-darwin-x64@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-darwin-x64/-/binding-darwin-x64-0.86.0.tgz#a542a731d9d7f84c09c847add850a39e2b7a1ee4"
+"@oxc-parser/binding-darwin-x64@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-darwin-x64/-/binding-darwin-x64-0.87.0.tgz#6d6970305c7770d8ebcf888298763d1ef89e623e"
 
-"@oxc-parser/binding-freebsd-x64@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-freebsd-x64/-/binding-freebsd-x64-0.86.0.tgz#581905d38c15a6f40e663f7d9fcf54cc6ee733ad"
+"@oxc-parser/binding-freebsd-x64@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-freebsd-x64/-/binding-freebsd-x64-0.87.0.tgz#c9e050245bcd1574709ccf37dbbe19c37092ef2b"
 
-"@oxc-parser/binding-linux-arm-gnueabihf@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-0.86.0.tgz#11ac880868684f85ce721fb326b15e3664cbac86"
+"@oxc-parser/binding-linux-arm-gnueabihf@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-0.87.0.tgz#ded559007e309938f6cdd5e09e94e55e4efd06e7"
 
-"@oxc-parser/binding-linux-arm-musleabihf@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-arm-musleabihf/-/binding-linux-arm-musleabihf-0.86.0.tgz#f3129eaf6318bb0bca89f3c4ee4b081897b276a4"
+"@oxc-parser/binding-linux-arm-musleabihf@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-arm-musleabihf/-/binding-linux-arm-musleabihf-0.87.0.tgz#83b7380ae780317abe14f21ca97967d2c7b49e10"
 
-"@oxc-parser/binding-linux-arm64-gnu@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-0.86.0.tgz#8b1ee32ca0db2e81f74132127cb24907bc3baf0a"
+"@oxc-parser/binding-linux-arm64-gnu@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-0.87.0.tgz#f83009f9f08585c04bc03e4a54a8cb02b59e1d40"
 
-"@oxc-parser/binding-linux-arm64-musl@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-arm64-musl/-/binding-linux-arm64-musl-0.86.0.tgz#1ca8b17a3da1013e6382358e446197738a598a61"
+"@oxc-parser/binding-linux-arm64-musl@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-arm64-musl/-/binding-linux-arm64-musl-0.87.0.tgz#f9c897399617841bfc20db52d914e4a8e35dcc3e"
 
-"@oxc-parser/binding-linux-riscv64-gnu@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-riscv64-gnu/-/binding-linux-riscv64-gnu-0.86.0.tgz#c50b9b38059bd8252ffb80b8ef7f3d3df2f47900"
+"@oxc-parser/binding-linux-riscv64-gnu@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-riscv64-gnu/-/binding-linux-riscv64-gnu-0.87.0.tgz#c6b523564ea465a77d6cbf06c0ff8a7be86ffe1c"
 
-"@oxc-parser/binding-linux-s390x-gnu@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-0.86.0.tgz#b47ec218bf7d2d32d9306ae6d562a17fcc2e1bb5"
+"@oxc-parser/binding-linux-s390x-gnu@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-0.87.0.tgz#58e753404132c4540d142c86916d170aec1a4294"
 
-"@oxc-parser/binding-linux-x64-gnu@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-x64-gnu/-/binding-linux-x64-gnu-0.86.0.tgz#ca9cc82fb3a9237263663302edf8197ac044dbef"
+"@oxc-parser/binding-linux-x64-gnu@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-x64-gnu/-/binding-linux-x64-gnu-0.87.0.tgz#5fc20df949f2cbd230bece0b384bab53172b8d9e"
 
-"@oxc-parser/binding-linux-x64-musl@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-x64-musl/-/binding-linux-x64-musl-0.86.0.tgz#7a14501e2880fba145557205a2e5b7d10e94586e"
+"@oxc-parser/binding-linux-x64-musl@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-linux-x64-musl/-/binding-linux-x64-musl-0.87.0.tgz#02851a1611d0e3491e1aeac103090ee723e5cab9"
 
-"@oxc-parser/binding-wasm32-wasi@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-wasm32-wasi/-/binding-wasm32-wasi-0.86.0.tgz#01a661e6255283358ecf1c599ca48bc532d9e6c0"
+"@oxc-parser/binding-wasm32-wasi@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-wasm32-wasi/-/binding-wasm32-wasi-0.87.0.tgz#a7a6db09c7e9db8f128e456eaf67ebfae1af3242"
   dependencies:
     "@napi-rs/wasm-runtime" "^1.0.3"
 
-"@oxc-parser/binding-win32-arm64-msvc@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-0.86.0.tgz#01a5b398f6671eecb308b7379d8bdd896e00fce1"
+"@oxc-parser/binding-win32-arm64-msvc@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-0.87.0.tgz#60d5a5f5de59b595e05a435749b4d268521b309e"
 
-"@oxc-parser/binding-win32-x64-msvc@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-win32-x64-msvc/-/binding-win32-x64-msvc-0.86.0.tgz#15435851235b455afdd27bccd0bff3933fe3f543"
+"@oxc-parser/binding-win32-x64-msvc@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-parser/binding-win32-x64-msvc/-/binding-win32-x64-msvc-0.87.0.tgz#c85eb243b85efd5b9211232de6be349a5d270515"
 
-"@oxc-project/types@^0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-project/types/-/types-0.86.0.tgz#8de353dda445ded4fd60f3f7355353e2e0db59d0"
+"@oxc-project/types@^0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-project/types/-/types-0.87.0.tgz#420c38c9b3a008b45d7a2262ece13f530b75d8f2"
 
-"@oxc-transform/binding-android-arm64@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-android-arm64/-/binding-android-arm64-0.86.0.tgz#cb4acc245bf6005c349f61eab80f0bb291c1a1b2"
+"@oxc-transform/binding-android-arm64@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-android-arm64/-/binding-android-arm64-0.87.0.tgz#a7e0b4d256237c2189613e9f8caf07487ff83edc"
 
-"@oxc-transform/binding-darwin-arm64@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-darwin-arm64/-/binding-darwin-arm64-0.86.0.tgz#c83cd00338f50dd1844bef0a7c84cfac690a7a2a"
+"@oxc-transform/binding-darwin-arm64@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-darwin-arm64/-/binding-darwin-arm64-0.87.0.tgz#d5ea42784dcd865cc187cf758e1b8f3a9b8acb9f"
 
-"@oxc-transform/binding-darwin-x64@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-darwin-x64/-/binding-darwin-x64-0.86.0.tgz#49beae493ef12c3e9e47e2399d72a1054777bfca"
+"@oxc-transform/binding-darwin-x64@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-darwin-x64/-/binding-darwin-x64-0.87.0.tgz#4ae0a151a6a543bbc27146bebc498dcbaf40faf2"
 
-"@oxc-transform/binding-freebsd-x64@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-freebsd-x64/-/binding-freebsd-x64-0.86.0.tgz#a0e034a7e4de63e6f80fe601b50df029a44f7c77"
+"@oxc-transform/binding-freebsd-x64@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-freebsd-x64/-/binding-freebsd-x64-0.87.0.tgz#89298fad16421be86543aaa3436fa84779d1ccd0"
 
-"@oxc-transform/binding-linux-arm-gnueabihf@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-0.86.0.tgz#93035e9cc492c1b688fd72519ef6ebf47f88186d"
+"@oxc-transform/binding-linux-arm-gnueabihf@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-linux-arm-gnueabihf/-/binding-linux-arm-gnueabihf-0.87.0.tgz#293305d4bf73a86e6eeee7149518ab07699f4ecd"
 
-"@oxc-transform/binding-linux-arm-musleabihf@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-linux-arm-musleabihf/-/binding-linux-arm-musleabihf-0.86.0.tgz#a78e271637ecf97f75e803098837688883458021"
+"@oxc-transform/binding-linux-arm-musleabihf@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-linux-arm-musleabihf/-/binding-linux-arm-musleabihf-0.87.0.tgz#e55e26584d0ebc9952318838684c83f4abc4e7a7"
 
-"@oxc-transform/binding-linux-arm64-gnu@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-0.86.0.tgz#4ecb070d178dac52b32d4ae0e2a27b86822b53e3"
+"@oxc-transform/binding-linux-arm64-gnu@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-linux-arm64-gnu/-/binding-linux-arm64-gnu-0.87.0.tgz#36bb32187dc3345c05121f6e52f980acc4779594"
 
-"@oxc-transform/binding-linux-arm64-musl@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-linux-arm64-musl/-/binding-linux-arm64-musl-0.86.0.tgz#dd9ee5a5fe42d3a8ef7025465aabb27cba379ed7"
+"@oxc-transform/binding-linux-arm64-musl@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-linux-arm64-musl/-/binding-linux-arm64-musl-0.87.0.tgz#0720e32034ddee869b54bb771ebd316077f05add"
 
-"@oxc-transform/binding-linux-riscv64-gnu@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-linux-riscv64-gnu/-/binding-linux-riscv64-gnu-0.86.0.tgz#79d65f50c9b578bb9eb087b5afe7e277b504dc70"
+"@oxc-transform/binding-linux-riscv64-gnu@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-linux-riscv64-gnu/-/binding-linux-riscv64-gnu-0.87.0.tgz#6a5198eafc39cbc271d390107f31a96480bfe636"
 
-"@oxc-transform/binding-linux-s390x-gnu@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-0.86.0.tgz#763788e2a0dd2879114b5e41ca0a7ae17552050b"
+"@oxc-transform/binding-linux-s390x-gnu@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-linux-s390x-gnu/-/binding-linux-s390x-gnu-0.87.0.tgz#4bfb22872bff2b83e4c8605a13766baf015d722f"
 
-"@oxc-transform/binding-linux-x64-gnu@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-linux-x64-gnu/-/binding-linux-x64-gnu-0.86.0.tgz#19266f530a8681f68b65928eeeeadaed9ba89698"
+"@oxc-transform/binding-linux-x64-gnu@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-linux-x64-gnu/-/binding-linux-x64-gnu-0.87.0.tgz#b4976fb3571fcea49fe1e72955e14e3d3ffe8aa1"
 
-"@oxc-transform/binding-linux-x64-musl@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-linux-x64-musl/-/binding-linux-x64-musl-0.86.0.tgz#66874ec640f0080535f4d7b9e1db5075e036118a"
+"@oxc-transform/binding-linux-x64-musl@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-linux-x64-musl/-/binding-linux-x64-musl-0.87.0.tgz#0d71ee720a966aecffae3fd3535bf11ed2bff855"
 
-"@oxc-transform/binding-wasm32-wasi@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-wasm32-wasi/-/binding-wasm32-wasi-0.86.0.tgz#c96ad67f8f32d84983661d38e6533077695d6c2f"
+"@oxc-transform/binding-wasm32-wasi@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-wasm32-wasi/-/binding-wasm32-wasi-0.87.0.tgz#b80b72de100df7525a437e07f5924b656b743d69"
   dependencies:
     "@napi-rs/wasm-runtime" "^1.0.3"
 
-"@oxc-transform/binding-win32-arm64-msvc@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-0.86.0.tgz#58bf8d8d891dec2d607d0577a91bd0daa8ccfc3d"
+"@oxc-transform/binding-win32-arm64-msvc@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-win32-arm64-msvc/-/binding-win32-arm64-msvc-0.87.0.tgz#b82923255be1de9e4f4b184fd115ae82eb283d08"
 
-"@oxc-transform/binding-win32-x64-msvc@0.86.0":
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-win32-x64-msvc/-/binding-win32-x64-msvc-0.86.0.tgz#5c20417fa8eb190d96b2b951fb46711060d2fd29"
+"@oxc-transform/binding-win32-x64-msvc@0.87.0":
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/@oxc-transform/binding-win32-x64-msvc/-/binding-win32-x64-msvc-0.87.0.tgz#798fd95ab7425be75a0a69b40f92ffef8610e32c"
 
 "@parcel/watcher-android-arm64@2.5.1":
   version "2.5.1"
@@ -1465,13 +1405,13 @@
   version "1.0.0-next.29"
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.29.tgz#5a40109a1ab5f84d6fd8fc928b19f367cbe7e7b1"
 
-"@poppinss/colors@^4.1.4", "@poppinss/colors@^4.1.5":
+"@poppinss/colors@^4.1.5":
   version "4.1.5"
   resolved "https://registry.yarnpkg.com/@poppinss/colors/-/colors-4.1.5.tgz#09273b845a4816f5fd9c53c78a3bc656650fe18f"
   dependencies:
     kleur "^4.1.5"
 
-"@poppinss/dumper@^0.6.3", "@poppinss/dumper@^0.6.4":
+"@poppinss/dumper@^0.6.4":
   version "0.6.4"
   resolved "https://registry.yarnpkg.com/@poppinss/dumper/-/dumper-0.6.4.tgz#b902ff0b2850f5367f947ffdb2d7154f22856d43"
   dependencies:
@@ -1601,41 +1541,85 @@
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-android-arm-eabi/-/rollup-android-arm-eabi-4.50.1.tgz#7d41dc45adcfcb272504ebcea9c8a5b2c659e963"
 
+"@rollup/rollup-android-arm-eabi@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-android-arm-eabi/-/rollup-android-arm-eabi-4.50.2.tgz#52d66eba5198155f265f54aed94d2489c49269f6"
+
 "@rollup/rollup-android-arm64@4.50.1":
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-android-arm64/-/rollup-android-arm64-4.50.1.tgz#6c708fae2c9755e994c42d56c34a94cb77020650"
+
+"@rollup/rollup-android-arm64@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-android-arm64/-/rollup-android-arm64-4.50.2.tgz#137e8153fc9ce6757531ce300b8d2262299f758e"
 
 "@rollup/rollup-darwin-arm64@4.50.1":
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-darwin-arm64/-/rollup-darwin-arm64-4.50.1.tgz#85ccf92ab114e434c83037a175923a525635cbb4"
 
+"@rollup/rollup-darwin-arm64@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-darwin-arm64/-/rollup-darwin-arm64-4.50.2.tgz#d4afd904386d37192cf5ef7345fdb0dd1bac0bc3"
+
 "@rollup/rollup-darwin-x64@4.50.1":
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-darwin-x64/-/rollup-darwin-x64-4.50.1.tgz#0af089f3d658d05573208dabb3a392b44d7f4630"
+
+"@rollup/rollup-darwin-x64@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-darwin-x64/-/rollup-darwin-x64-4.50.2.tgz#6dbe83431fc7cbc09a2b6ed2b9fb7a62dd66ebc2"
 
 "@rollup/rollup-freebsd-arm64@4.50.1":
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-freebsd-arm64/-/rollup-freebsd-arm64-4.50.1.tgz#46c22a16d18180e99686647543335567221caa9c"
 
+"@rollup/rollup-freebsd-arm64@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-freebsd-arm64/-/rollup-freebsd-arm64-4.50.2.tgz#d35afb9f66154b557b3387d12450920f8a954b96"
+
 "@rollup/rollup-freebsd-x64@4.50.1":
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-freebsd-x64/-/rollup-freebsd-x64-4.50.1.tgz#819ffef2f81891c266456952962a13110c8e28b5"
+
+"@rollup/rollup-freebsd-x64@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-freebsd-x64/-/rollup-freebsd-x64-4.50.2.tgz#849303ecdc171a420317ad9166a70af308348f34"
 
 "@rollup/rollup-linux-arm-gnueabihf@4.50.1":
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-arm-gnueabihf/-/rollup-linux-arm-gnueabihf-4.50.1.tgz#7fe283c14793e607e653a3214b09f8973f08262a"
 
+"@rollup/rollup-linux-arm-gnueabihf@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-arm-gnueabihf/-/rollup-linux-arm-gnueabihf-4.50.2.tgz#ab36199ca613376232794b2f3ba10e2b547a447c"
+
 "@rollup/rollup-linux-arm-musleabihf@4.50.1":
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-arm-musleabihf/-/rollup-linux-arm-musleabihf-4.50.1.tgz#066e92eb22ea30560414ec800a6d119ba0b435ac"
+
+"@rollup/rollup-linux-arm-musleabihf@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-arm-musleabihf/-/rollup-linux-arm-musleabihf-4.50.2.tgz#f3704bc2eaecd176f558dc47af64197fcac36e8a"
 
 "@rollup/rollup-linux-arm64-gnu@4.50.1":
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-arm64-gnu/-/rollup-linux-arm64-gnu-4.50.1.tgz#480d518ea99a8d97b2a174c46cd55164f138cc37"
 
+"@rollup/rollup-linux-arm64-gnu@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-arm64-gnu/-/rollup-linux-arm64-gnu-4.50.2.tgz#dda0b06fd1daedd00b34395a2fb4aaaa2ed6c32b"
+
 "@rollup/rollup-linux-arm64-musl@4.50.1":
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-arm64-musl/-/rollup-linux-arm64-musl-4.50.1.tgz#ed7db3b8999b60dd20009ddf71c95f3af49423c8"
+
+"@rollup/rollup-linux-arm64-musl@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-arm64-musl/-/rollup-linux-arm64-musl-4.50.2.tgz#a018de66209051dad0c58e689e080326c3dd15b0"
+
+"@rollup/rollup-linux-loong64-gnu@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-loong64-gnu/-/rollup-linux-loong64-gnu-4.50.2.tgz#6e514f09988615e0c98fa5a34a88a30fec64d969"
 
 "@rollup/rollup-linux-loongarch64-gnu@4.50.1":
   version "4.50.1"
@@ -1645,41 +1629,81 @@
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-ppc64-gnu/-/rollup-linux-ppc64-gnu-4.50.1.tgz#a006700469be0041846c45b494c35754e6a04eea"
 
+"@rollup/rollup-linux-ppc64-gnu@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-ppc64-gnu/-/rollup-linux-ppc64-gnu-4.50.2.tgz#9b2efebc7b4a1951e684a895fdee0fef26319e0d"
+
 "@rollup/rollup-linux-riscv64-gnu@4.50.1":
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-riscv64-gnu/-/rollup-linux-riscv64-gnu-4.50.1.tgz#0fcc45b2ec8a0e54218ca48849ea6d596f53649c"
+
+"@rollup/rollup-linux-riscv64-gnu@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-riscv64-gnu/-/rollup-linux-riscv64-gnu-4.50.2.tgz#a7104270e93d75789d1ba857b2c68ddf61f24f68"
 
 "@rollup/rollup-linux-riscv64-musl@4.50.1":
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-riscv64-musl/-/rollup-linux-riscv64-musl-4.50.1.tgz#d6e617eec9fe6f5859ee13fad435a16c42b469f2"
 
+"@rollup/rollup-linux-riscv64-musl@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-riscv64-musl/-/rollup-linux-riscv64-musl-4.50.2.tgz#42d153f734a7b9fcacd764cc9bee6c207dca4db6"
+
 "@rollup/rollup-linux-s390x-gnu@4.50.1":
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-s390x-gnu/-/rollup-linux-s390x-gnu-4.50.1.tgz#b147760d63c6f35b4b18e6a25a2a760dd3ea0c05"
+
+"@rollup/rollup-linux-s390x-gnu@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-s390x-gnu/-/rollup-linux-s390x-gnu-4.50.2.tgz#826ad73099f6fd57c083dc5329151b25404bc67d"
 
 "@rollup/rollup-linux-x64-gnu@4.50.1":
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.50.1.tgz#fc0be1da374f85e7e85dccaf1ff12d7cfc9fbe3d"
 
+"@rollup/rollup-linux-x64-gnu@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.50.2.tgz#b9ec17bf0ca3f737d0895fca2115756674342142"
+
 "@rollup/rollup-linux-x64-musl@4.50.1":
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.50.1.tgz#54c79932e0f9a3c992b034c82325be3bcde0d067"
+
+"@rollup/rollup-linux-x64-musl@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.50.2.tgz#29fe0adb45a1d99042f373685efbac9cdd5354d9"
 
 "@rollup/rollup-openharmony-arm64@4.50.1":
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-openharmony-arm64/-/rollup-openharmony-arm64-4.50.1.tgz#fc48e74d413623ac02c1d521bec3e5e784488fdc"
 
+"@rollup/rollup-openharmony-arm64@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-openharmony-arm64/-/rollup-openharmony-arm64-4.50.2.tgz#29648f11e202736b74413f823b71e339e3068d60"
+
 "@rollup/rollup-win32-arm64-msvc@4.50.1":
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-arm64-msvc/-/rollup-win32-arm64-msvc-4.50.1.tgz#8ce3d1181644406362cf1e62c90e88ab083e02bb"
+
+"@rollup/rollup-win32-arm64-msvc@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-arm64-msvc/-/rollup-win32-arm64-msvc-4.50.2.tgz#91e7edec80542fd81ab1c2581a91403ac63458ae"
 
 "@rollup/rollup-win32-ia32-msvc@4.50.1":
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-ia32-msvc/-/rollup-win32-ia32-msvc-4.50.1.tgz#dd2dfc896eac4b2689d55f01c6d51c249263f805"
 
+"@rollup/rollup-win32-ia32-msvc@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-ia32-msvc/-/rollup-win32-ia32-msvc-4.50.2.tgz#9b7cd9779f1147a3e8d3ddad432ae64dd222c4e9"
+
 "@rollup/rollup-win32-x64-msvc@4.50.1":
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.50.1.tgz#13f758c97b9fbbac56b6928547a3ff384e7cfb3e"
+
+"@rollup/rollup-win32-x64-msvc@4.50.2":
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.50.2.tgz#40ecd1357526fe328c7af704a283ee8533ca7ad6"
 
 "@rtsao/scc@^1.1.0":
   version "1.1.0"
@@ -2279,7 +2303,7 @@
     "@vue/compiler-ssr" "3.5.21"
     "@vue/shared" "3.5.21"
 
-"@vue/shared@3.5.21", "@vue/shared@^3.5.0", "@vue/shared@^3.5.18", "@vue/shared@^3.5.20":
+"@vue/shared@3.5.21", "@vue/shared@^3.5.0", "@vue/shared@^3.5.18", "@vue/shared@^3.5.21":
   version "3.5.21"
   resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.5.21.tgz#505edb122629d1979f70a2a65ca0bd4050dc2e54"
 
@@ -3680,7 +3704,7 @@ faye-websocket@0.11.4:
   dependencies:
     websocket-driver ">=0.5.1"
 
-fdir@^6.2.0, fdir@^6.4.4, fdir@^6.5.0:
+fdir@^6.2.0, fdir@^6.5.0:
   version "6.5.0"
   resolved "https://registry.yarnpkg.com/fdir/-/fdir-6.5.0.tgz#ed2ab967a331ade62f18d077dae192684d50d350"
 
@@ -4803,9 +4827,9 @@ natural-compare@^1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
 
-nitropack@^2.12.4:
-  version "2.12.5"
-  resolved "https://registry.yarnpkg.com/nitropack/-/nitropack-2.12.5.tgz#93e9a0ee1ba97ea7501d57f9a2802d3dff95381b"
+nitropack@^2.12.5:
+  version "2.12.6"
+  resolved "https://registry.yarnpkg.com/nitropack/-/nitropack-2.12.6.tgz#7743f88c2c9710347f982341c356a4bf56cbce6d"
   dependencies:
     "@cloudflare/kv-asset-handler" "^0.4.0"
     "@rollup/plugin-alias" "^5.1.1"
@@ -4844,12 +4868,12 @@ nitropack@^2.12.4:
     klona "^2.0.6"
     knitwork "^1.2.0"
     listhen "^1.9.0"
-    magic-string "^0.30.18"
+    magic-string "^0.30.19"
     magicast "^0.3.5"
     mime "^4.0.7"
     mlly "^1.8.0"
     node-fetch-native "^1.6.7"
-    node-mock-http "^1.0.2"
+    node-mock-http "^1.0.3"
     ofetch "^1.4.1"
     ohash "^2.0.11"
     pathe "^2.0.3"
@@ -4857,7 +4881,7 @@ nitropack@^2.12.4:
     pkg-types "^2.3.0"
     pretty-bytes "^7.0.1"
     radix3 "^1.1.2"
-    rollup "^4.50.0"
+    rollup "^4.50.1"
     rollup-plugin-visualizer "^6.0.3"
     scule "^1.3.0"
     semver "^7.7.2"
@@ -4869,13 +4893,13 @@ nitropack@^2.12.4:
     ultrahtml "^1.6.0"
     uncrypto "^0.1.3"
     unctx "^2.4.1"
-    unenv "2.0.0-rc.20"
+    unenv "^2.0.0-rc.21"
     unimport "^5.2.0"
     unplugin-utils "^0.3.0"
-    unstorage "^1.17.0"
+    unstorage "^1.17.1"
     untyped "^2.0.0"
     unwasm "^0.3.11"
-    youch "4.1.0-beta.8"
+    youch "^4.1.0-beta.11"
     youch-core "^0.3.3"
 
 node-addon-api@^7.0.0:
@@ -4900,7 +4924,7 @@ node-gyp-build@^4.2.2:
   version "4.8.4"
   resolved "https://registry.yarnpkg.com/node-gyp-build/-/node-gyp-build-4.8.4.tgz#8a70ee85464ae52327772a90d66c6077a900cfc8"
 
-node-mock-http@^1.0.2:
+node-mock-http@^1.0.2, node-mock-http@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/node-mock-http/-/node-mock-http-1.0.3.tgz#4e55e093267a3b910cded7354389ce2d02c89e77"
 
@@ -4950,19 +4974,19 @@ nth-check@^2.0.1, nth-check@^2.1.1:
   dependencies:
     boolbase "^1.0.0"
 
-nuxt@^4.1.1:
-  version "4.1.1"
-  resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-4.1.1.tgz#9c7f84bd8692ac17e307b4408f4e9237f7c36a4c"
+nuxt@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/nuxt/-/nuxt-4.1.2.tgz#0d3b57a0a6a672ab21b7e3f3f2a0481d50d5902e"
   dependencies:
     "@nuxt/cli" "^3.28.0"
     "@nuxt/devalue" "^2.0.2"
     "@nuxt/devtools" "^2.6.3"
-    "@nuxt/kit" "4.1.1"
-    "@nuxt/schema" "4.1.1"
+    "@nuxt/kit" "4.1.2"
+    "@nuxt/schema" "4.1.2"
     "@nuxt/telemetry" "^2.6.6"
-    "@nuxt/vite-builder" "4.1.1"
+    "@nuxt/vite-builder" "4.1.2"
     "@unhead/vue" "^2.0.14"
-    "@vue/shared" "^3.5.20"
+    "@vue/shared" "^3.5.21"
     c12 "^3.2.0"
     chokidar "^4.0.3"
     compatx "^0.2.0"
@@ -4983,19 +5007,19 @@ nuxt@^4.1.1:
     jiti "^2.5.1"
     klona "^2.0.6"
     knitwork "^1.2.0"
-    magic-string "^0.30.18"
+    magic-string "^0.30.19"
     mlly "^1.8.0"
     mocked-exports "^0.1.1"
     nanotar "^0.2.0"
-    nitropack "^2.12.4"
+    nitropack "^2.12.5"
     nypm "^0.6.1"
     ofetch "^1.4.1"
     ohash "^2.0.11"
     on-change "^5.0.1"
-    oxc-minify "^0.86.0"
-    oxc-parser "^0.86.0"
-    oxc-transform "^0.86.0"
-    oxc-walker "^0.4.0"
+    oxc-minify "^0.87.0"
+    oxc-parser "^0.87.0"
+    oxc-transform "^0.87.0"
+    oxc-walker "^0.5.2"
     pathe "^2.0.3"
     perfect-debounce "^2.0.0"
     pkg-types "^2.3.0"
@@ -5003,7 +5027,7 @@ nuxt@^4.1.1:
     scule "^1.3.0"
     semver "^7.7.2"
     std-env "^3.9.0"
-    tinyglobby "0.2.14"
+    tinyglobby "^0.2.15"
     ufo "^1.6.1"
     ultrahtml "^1.6.0"
     uncrypto "^0.1.3"
@@ -5011,9 +5035,9 @@ nuxt@^4.1.1:
     unimport "^5.2.0"
     unplugin "^2.3.10"
     unplugin-vue-router "^0.15.0"
-    unstorage "^1.17.0"
+    unstorage "^1.17.1"
     untyped "^2.0.0"
-    vue "^3.5.20"
+    vue "^3.5.21"
     vue-bundle-renderer "^2.1.2"
     vue-devtools-stub "^0.1.0"
     vue-router "^4.5.1"
@@ -5137,73 +5161,72 @@ own-keys@^1.0.1:
     object-keys "^1.1.1"
     safe-push-apply "^1.0.0"
 
-oxc-minify@^0.86.0:
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/oxc-minify/-/oxc-minify-0.86.0.tgz#f18f65f272eb3a3cf0f15a6d822a0a1c419bbc65"
+oxc-minify@^0.87.0:
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/oxc-minify/-/oxc-minify-0.87.0.tgz#d185fbf8e96f721eaca83fc5afc100e60d0db3ab"
   optionalDependencies:
-    "@oxc-minify/binding-android-arm64" "0.86.0"
-    "@oxc-minify/binding-darwin-arm64" "0.86.0"
-    "@oxc-minify/binding-darwin-x64" "0.86.0"
-    "@oxc-minify/binding-freebsd-x64" "0.86.0"
-    "@oxc-minify/binding-linux-arm-gnueabihf" "0.86.0"
-    "@oxc-minify/binding-linux-arm-musleabihf" "0.86.0"
-    "@oxc-minify/binding-linux-arm64-gnu" "0.86.0"
-    "@oxc-minify/binding-linux-arm64-musl" "0.86.0"
-    "@oxc-minify/binding-linux-riscv64-gnu" "0.86.0"
-    "@oxc-minify/binding-linux-s390x-gnu" "0.86.0"
-    "@oxc-minify/binding-linux-x64-gnu" "0.86.0"
-    "@oxc-minify/binding-linux-x64-musl" "0.86.0"
-    "@oxc-minify/binding-wasm32-wasi" "0.86.0"
-    "@oxc-minify/binding-win32-arm64-msvc" "0.86.0"
-    "@oxc-minify/binding-win32-x64-msvc" "0.86.0"
+    "@oxc-minify/binding-android-arm64" "0.87.0"
+    "@oxc-minify/binding-darwin-arm64" "0.87.0"
+    "@oxc-minify/binding-darwin-x64" "0.87.0"
+    "@oxc-minify/binding-freebsd-x64" "0.87.0"
+    "@oxc-minify/binding-linux-arm-gnueabihf" "0.87.0"
+    "@oxc-minify/binding-linux-arm-musleabihf" "0.87.0"
+    "@oxc-minify/binding-linux-arm64-gnu" "0.87.0"
+    "@oxc-minify/binding-linux-arm64-musl" "0.87.0"
+    "@oxc-minify/binding-linux-riscv64-gnu" "0.87.0"
+    "@oxc-minify/binding-linux-s390x-gnu" "0.87.0"
+    "@oxc-minify/binding-linux-x64-gnu" "0.87.0"
+    "@oxc-minify/binding-linux-x64-musl" "0.87.0"
+    "@oxc-minify/binding-wasm32-wasi" "0.87.0"
+    "@oxc-minify/binding-win32-arm64-msvc" "0.87.0"
+    "@oxc-minify/binding-win32-x64-msvc" "0.87.0"
 
-oxc-parser@^0.86.0:
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/oxc-parser/-/oxc-parser-0.86.0.tgz#3eb4bae8109464f5aa4340c309a6bc816d42f306"
+oxc-parser@^0.87.0:
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/oxc-parser/-/oxc-parser-0.87.0.tgz#19bbe0657aecbb4957a32053c1ab9b42a1574a49"
   dependencies:
-    "@oxc-project/types" "^0.86.0"
+    "@oxc-project/types" "^0.87.0"
   optionalDependencies:
-    "@oxc-parser/binding-android-arm64" "0.86.0"
-    "@oxc-parser/binding-darwin-arm64" "0.86.0"
-    "@oxc-parser/binding-darwin-x64" "0.86.0"
-    "@oxc-parser/binding-freebsd-x64" "0.86.0"
-    "@oxc-parser/binding-linux-arm-gnueabihf" "0.86.0"
-    "@oxc-parser/binding-linux-arm-musleabihf" "0.86.0"
-    "@oxc-parser/binding-linux-arm64-gnu" "0.86.0"
-    "@oxc-parser/binding-linux-arm64-musl" "0.86.0"
-    "@oxc-parser/binding-linux-riscv64-gnu" "0.86.0"
-    "@oxc-parser/binding-linux-s390x-gnu" "0.86.0"
-    "@oxc-parser/binding-linux-x64-gnu" "0.86.0"
-    "@oxc-parser/binding-linux-x64-musl" "0.86.0"
-    "@oxc-parser/binding-wasm32-wasi" "0.86.0"
-    "@oxc-parser/binding-win32-arm64-msvc" "0.86.0"
-    "@oxc-parser/binding-win32-x64-msvc" "0.86.0"
+    "@oxc-parser/binding-android-arm64" "0.87.0"
+    "@oxc-parser/binding-darwin-arm64" "0.87.0"
+    "@oxc-parser/binding-darwin-x64" "0.87.0"
+    "@oxc-parser/binding-freebsd-x64" "0.87.0"
+    "@oxc-parser/binding-linux-arm-gnueabihf" "0.87.0"
+    "@oxc-parser/binding-linux-arm-musleabihf" "0.87.0"
+    "@oxc-parser/binding-linux-arm64-gnu" "0.87.0"
+    "@oxc-parser/binding-linux-arm64-musl" "0.87.0"
+    "@oxc-parser/binding-linux-riscv64-gnu" "0.87.0"
+    "@oxc-parser/binding-linux-s390x-gnu" "0.87.0"
+    "@oxc-parser/binding-linux-x64-gnu" "0.87.0"
+    "@oxc-parser/binding-linux-x64-musl" "0.87.0"
+    "@oxc-parser/binding-wasm32-wasi" "0.87.0"
+    "@oxc-parser/binding-win32-arm64-msvc" "0.87.0"
+    "@oxc-parser/binding-win32-x64-msvc" "0.87.0"
 
-oxc-transform@^0.86.0:
-  version "0.86.0"
-  resolved "https://registry.yarnpkg.com/oxc-transform/-/oxc-transform-0.86.0.tgz#700d6ef88953784cab389ff518c691de4cca13c0"
+oxc-transform@^0.87.0:
+  version "0.87.0"
+  resolved "https://registry.yarnpkg.com/oxc-transform/-/oxc-transform-0.87.0.tgz#4c917206f87d24d3e0b1e59fdb4e9ffe7f802392"
   optionalDependencies:
-    "@oxc-transform/binding-android-arm64" "0.86.0"
-    "@oxc-transform/binding-darwin-arm64" "0.86.0"
-    "@oxc-transform/binding-darwin-x64" "0.86.0"
-    "@oxc-transform/binding-freebsd-x64" "0.86.0"
-    "@oxc-transform/binding-linux-arm-gnueabihf" "0.86.0"
-    "@oxc-transform/binding-linux-arm-musleabihf" "0.86.0"
-    "@oxc-transform/binding-linux-arm64-gnu" "0.86.0"
-    "@oxc-transform/binding-linux-arm64-musl" "0.86.0"
-    "@oxc-transform/binding-linux-riscv64-gnu" "0.86.0"
-    "@oxc-transform/binding-linux-s390x-gnu" "0.86.0"
-    "@oxc-transform/binding-linux-x64-gnu" "0.86.0"
-    "@oxc-transform/binding-linux-x64-musl" "0.86.0"
-    "@oxc-transform/binding-wasm32-wasi" "0.86.0"
-    "@oxc-transform/binding-win32-arm64-msvc" "0.86.0"
-    "@oxc-transform/binding-win32-x64-msvc" "0.86.0"
+    "@oxc-transform/binding-android-arm64" "0.87.0"
+    "@oxc-transform/binding-darwin-arm64" "0.87.0"
+    "@oxc-transform/binding-darwin-x64" "0.87.0"
+    "@oxc-transform/binding-freebsd-x64" "0.87.0"
+    "@oxc-transform/binding-linux-arm-gnueabihf" "0.87.0"
+    "@oxc-transform/binding-linux-arm-musleabihf" "0.87.0"
+    "@oxc-transform/binding-linux-arm64-gnu" "0.87.0"
+    "@oxc-transform/binding-linux-arm64-musl" "0.87.0"
+    "@oxc-transform/binding-linux-riscv64-gnu" "0.87.0"
+    "@oxc-transform/binding-linux-s390x-gnu" "0.87.0"
+    "@oxc-transform/binding-linux-x64-gnu" "0.87.0"
+    "@oxc-transform/binding-linux-x64-musl" "0.87.0"
+    "@oxc-transform/binding-wasm32-wasi" "0.87.0"
+    "@oxc-transform/binding-win32-arm64-msvc" "0.87.0"
+    "@oxc-transform/binding-win32-x64-msvc" "0.87.0"
 
-oxc-walker@^0.4.0:
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/oxc-walker/-/oxc-walker-0.4.0.tgz#8814c27d347c14a83dc1de650bc266abbf99d8b7"
+oxc-walker@^0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/oxc-walker/-/oxc-walker-0.5.2.tgz#ebc81bbcb3138b70bd454754365e118ac0616522"
   dependencies:
-    estree-walker "^3.0.3"
     magic-regexp "^0.10.0"
 
 p-limit@^2.2.0:
@@ -5789,7 +5812,7 @@ rollup-plugin-visualizer@^6.0.3:
     source-map "^0.7.4"
     yargs "^17.5.1"
 
-rollup@^4.43.0, rollup@^4.50.0:
+rollup@^4.43.0:
   version "4.50.1"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-4.50.1.tgz#6f0717c34aacc65cc727eeaaaccc2afc4e4485fd"
   dependencies:
@@ -5816,6 +5839,35 @@ rollup@^4.43.0, rollup@^4.50.0:
     "@rollup/rollup-win32-arm64-msvc" "4.50.1"
     "@rollup/rollup-win32-ia32-msvc" "4.50.1"
     "@rollup/rollup-win32-x64-msvc" "4.50.1"
+    fsevents "~2.3.2"
+
+rollup@^4.50.1:
+  version "4.50.2"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-4.50.2.tgz#938d898394939f3386d1e367ee6410a796b8f268"
+  dependencies:
+    "@types/estree" "1.0.8"
+  optionalDependencies:
+    "@rollup/rollup-android-arm-eabi" "4.50.2"
+    "@rollup/rollup-android-arm64" "4.50.2"
+    "@rollup/rollup-darwin-arm64" "4.50.2"
+    "@rollup/rollup-darwin-x64" "4.50.2"
+    "@rollup/rollup-freebsd-arm64" "4.50.2"
+    "@rollup/rollup-freebsd-x64" "4.50.2"
+    "@rollup/rollup-linux-arm-gnueabihf" "4.50.2"
+    "@rollup/rollup-linux-arm-musleabihf" "4.50.2"
+    "@rollup/rollup-linux-arm64-gnu" "4.50.2"
+    "@rollup/rollup-linux-arm64-musl" "4.50.2"
+    "@rollup/rollup-linux-loong64-gnu" "4.50.2"
+    "@rollup/rollup-linux-ppc64-gnu" "4.50.2"
+    "@rollup/rollup-linux-riscv64-gnu" "4.50.2"
+    "@rollup/rollup-linux-riscv64-musl" "4.50.2"
+    "@rollup/rollup-linux-s390x-gnu" "4.50.2"
+    "@rollup/rollup-linux-x64-gnu" "4.50.2"
+    "@rollup/rollup-linux-x64-musl" "4.50.2"
+    "@rollup/rollup-openharmony-arm64" "4.50.2"
+    "@rollup/rollup-win32-arm64-msvc" "4.50.2"
+    "@rollup/rollup-win32-ia32-msvc" "4.50.2"
+    "@rollup/rollup-win32-x64-msvc" "4.50.2"
     fsevents "~2.3.2"
 
 run-applescript@^7.0.0:
@@ -6481,13 +6533,6 @@ tinyexec@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/tinyexec/-/tinyexec-1.0.1.tgz#70c31ab7abbb4aea0a24f55d120e5990bfa1e0b1"
 
-tinyglobby@0.2.14:
-  version "0.2.14"
-  resolved "https://registry.yarnpkg.com/tinyglobby/-/tinyglobby-0.2.14.tgz#5280b0cf3f972b050e74ae88406c0a6a58f4079d"
-  dependencies:
-    fdir "^6.4.4"
-    picomatch "^4.0.2"
-
 tinyglobby@^0.2.13, tinyglobby@^0.2.14, tinyglobby@^0.2.15:
   version "0.2.15"
   resolved "https://registry.yarnpkg.com/tinyglobby/-/tinyglobby-0.2.15.tgz#e228dd1e638cea993d2fdb4fcd2d4602a79951c2"
@@ -6659,17 +6704,7 @@ undici@^7.16.0:
   version "7.16.0"
   resolved "https://registry.yarnpkg.com/undici/-/undici-7.16.0.tgz#cb2a1e957726d458b536e3f076bf51f066901c1a"
 
-unenv@2.0.0-rc.20:
-  version "2.0.0-rc.20"
-  resolved "https://registry.yarnpkg.com/unenv/-/unenv-2.0.0-rc.20.tgz#c44998475ba90372ab798862e3d53c8943f5febf"
-  dependencies:
-    defu "^6.1.4"
-    exsolve "^1.0.7"
-    ohash "^2.0.11"
-    pathe "^2.0.3"
-    ufo "^1.6.1"
-
-unenv@^2.0.0-rc.19, unenv@^2.0.0-rc.21:
+unenv@^2.0.0-rc.21:
   version "2.0.0-rc.21"
   resolved "https://registry.yarnpkg.com/unenv/-/unenv-2.0.0-rc.21.tgz#cc6082ef32370eb7098cb2f86ca7af3ef4c2c49f"
   dependencies:
@@ -6778,7 +6813,7 @@ unrs-resolver@^1.6.2:
     "@unrs/resolver-binding-win32-ia32-msvc" "1.11.1"
     "@unrs/resolver-binding-win32-x64-msvc" "1.11.1"
 
-unstorage@^1.17.0:
+unstorage@^1.17.1:
   version "1.17.1"
   resolved "https://registry.yarnpkg.com/unstorage/-/unstorage-1.17.1.tgz#611519b799d6d9dbecb34364a1f8919d39732e81"
   dependencies:
@@ -6911,7 +6946,7 @@ vite-plugin-vue-tracer@^1.0.0:
     pathe "^2.0.3"
     source-map-js "^1.2.1"
 
-"vite@^5.0.0 || ^6.0.0 || ^7.0.0-0", vite@^7.1.4, vite@^7.1.5:
+"vite@^5.0.0 || ^6.0.0 || ^7.0.0-0", vite@^7.1.5:
   version "7.1.5"
   resolved "https://registry.yarnpkg.com/vite/-/vite-7.1.5.tgz#4dbcb48c6313116689be540466fc80faa377be38"
   dependencies:
@@ -6990,7 +7025,7 @@ vue-test-utils@^1.0.0-beta.11:
   dependencies:
     lodash "^4.17.4"
 
-vue@^3.5.20, vue@latest:
+vue@^3.5.21, vue@latest:
   version "3.5.21"
   resolved "https://registry.yarnpkg.com/vue/-/vue-3.5.21.tgz#30af9553fd9642870321b7dc547b46c395cb7b91"
   dependencies:
@@ -7177,22 +7212,12 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
 
-youch-core@^0.3.1, youch-core@^0.3.3:
+youch-core@^0.3.3:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/youch-core/-/youch-core-0.3.3.tgz#c5d3d85aeea0d8bc7b36e9764ed3f14b7ceddc7d"
   dependencies:
     "@poppinss/exception" "^1.2.2"
     error-stack-parser-es "^1.0.5"
-
-youch@4.1.0-beta.8:
-  version "4.1.0-beta.8"
-  resolved "https://registry.yarnpkg.com/youch/-/youch-4.1.0-beta.8.tgz#439124c40b9c5f42722b604ef071966cbbb18192"
-  dependencies:
-    "@poppinss/colors" "^4.1.4"
-    "@poppinss/dumper" "^0.6.3"
-    "@speed-highlight/core" "^1.2.7"
-    cookie "^1.0.2"
-    youch-core "^0.3.1"
 
 youch@^4.1.0-beta.11:
   version "4.1.0-beta.11"
