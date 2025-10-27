@@ -3017,9 +3017,9 @@ detect-libc@^2.0.0:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-2.0.4.tgz#f04715b8ba815e53b4d8109655b6508a6865a7e8"
 
-devalue@^5.3.2:
-  version "5.3.2"
-  resolved "https://registry.yarnpkg.com/devalue/-/devalue-5.3.2.tgz#1d9a00f0d126a2f768589f236da8b67d6988d285"
+devalue@^5.3.2, devalue@^5.4.2:
+  version "5.4.2"
+  resolved "https://registry.yarnpkg.com/devalue/-/devalue-5.4.2.tgz#d002d836f9e92fc0c3bd9b76ea69129cbf99dca7"
 
 diff@^8.0.2:
   version "8.0.2"
