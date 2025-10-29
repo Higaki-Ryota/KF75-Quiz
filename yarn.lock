@@ -2208,55 +2208,55 @@
   dependencies:
     "@rolldown/pluginutils" "1.0.0-beta.29"
 
-"@vitest/expect@4.0.4":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@vitest/expect/-/expect-4.0.4.tgz#ba98573c19f568ce8ad0377ebbb5689883a2f053"
+"@vitest/expect@4.0.5":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@vitest/expect/-/expect-4.0.5.tgz#779dd235b0307abbcab9ebe97ee9befbf59d0224"
   dependencies:
     "@standard-schema/spec" "^1.0.0"
     "@types/chai" "^5.2.2"
-    "@vitest/spy" "4.0.4"
-    "@vitest/utils" "4.0.4"
+    "@vitest/spy" "4.0.5"
+    "@vitest/utils" "4.0.5"
     chai "^6.0.1"
     tinyrainbow "^3.0.3"
 
-"@vitest/mocker@4.0.4":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@vitest/mocker/-/mocker-4.0.4.tgz#d3366047e1f075874d35d40218e49266dfa2e561"
+"@vitest/mocker@4.0.5":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@vitest/mocker/-/mocker-4.0.5.tgz#45708620ac3f63e417e5b9baf8a923be992b97b1"
   dependencies:
-    "@vitest/spy" "4.0.4"
+    "@vitest/spy" "4.0.5"
     estree-walker "^3.0.3"
     magic-string "^0.30.19"
 
-"@vitest/pretty-format@4.0.4":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@vitest/pretty-format/-/pretty-format-4.0.4.tgz#19ffa9fb35853554e272799b68743717dc2ec1b7"
+"@vitest/pretty-format@4.0.5":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@vitest/pretty-format/-/pretty-format-4.0.5.tgz#b2abb93323867c569e3c950cb309a6e0793767c2"
   dependencies:
     tinyrainbow "^3.0.3"
 
-"@vitest/runner@4.0.4":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@vitest/runner/-/runner-4.0.4.tgz#ca0eb9de67bdfe6c6cb0841a23f47474af92dbf9"
+"@vitest/runner@4.0.5":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@vitest/runner/-/runner-4.0.5.tgz#12ea16d44f623d5a11c3fd9c7ce822bed6819d5c"
   dependencies:
-    "@vitest/utils" "4.0.4"
+    "@vitest/utils" "4.0.5"
     pathe "^2.0.3"
 
-"@vitest/snapshot@4.0.4":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@vitest/snapshot/-/snapshot-4.0.4.tgz#ea90222f94da640481c8809e87597171b049c727"
+"@vitest/snapshot@4.0.5":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@vitest/snapshot/-/snapshot-4.0.5.tgz#b39276eab03c64d20fefe9a2268a4b846a2f4cdf"
   dependencies:
-    "@vitest/pretty-format" "4.0.4"
+    "@vitest/pretty-format" "4.0.5"
     magic-string "^0.30.19"
     pathe "^2.0.3"
 
-"@vitest/spy@4.0.4":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@vitest/spy/-/spy-4.0.4.tgz#b20b8736cdfd1774e38bceeadac1936d9b7653bf"
+"@vitest/spy@4.0.5":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@vitest/spy/-/spy-4.0.5.tgz#ffe4f1a05c31cbed558d33e428957041df8a40af"
 
-"@vitest/utils@4.0.4":
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/@vitest/utils/-/utils-4.0.4.tgz#90d355d0f21596a06eca83f84783a29467513d6a"
+"@vitest/utils@4.0.5":
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/@vitest/utils/-/utils-4.0.5.tgz#9f787f0891c131e878aab52c745a15092fe88c62"
   dependencies:
-    "@vitest/pretty-format" "4.0.4"
+    "@vitest/pretty-format" "4.0.5"
     tinyrainbow "^3.0.3"
 
 "@volar/language-core@2.4.23":
@@ -3194,7 +3194,7 @@ detect-libc@^2.0.0:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-2.0.4.tgz#f04715b8ba815e53b4d8109655b6508a6865a7e8"
 
-devalue@^5.3.2, devalue@^5.4.2:
+devalue@^5.4.2:
   version "5.4.2"
   resolved "https://registry.yarnpkg.com/devalue/-/devalue-5.4.2.tgz#d002d836f9e92fc0c3bd9b76ea69129cbf99dca7"
 
@@ -7149,17 +7149,17 @@ vite-plugin-vue-tracer@^1.0.1:
   optionalDependencies:
     fsevents "~2.3.3"
 
-vitest@^4.0.4:
-  version "4.0.4"
-  resolved "https://registry.yarnpkg.com/vitest/-/vitest-4.0.4.tgz#92f8ed44110292c80efadc03bb6fa735ebefa414"
+vitest@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/vitest/-/vitest-4.0.5.tgz#6a84c31228ebc20cc18af4236463a46d655743af"
   dependencies:
-    "@vitest/expect" "4.0.4"
-    "@vitest/mocker" "4.0.4"
-    "@vitest/pretty-format" "4.0.4"
-    "@vitest/runner" "4.0.4"
-    "@vitest/snapshot" "4.0.4"
-    "@vitest/spy" "4.0.4"
-    "@vitest/utils" "4.0.4"
+    "@vitest/expect" "4.0.5"
+    "@vitest/mocker" "4.0.5"
+    "@vitest/pretty-format" "4.0.5"
+    "@vitest/runner" "4.0.5"
+    "@vitest/snapshot" "4.0.5"
+    "@vitest/spy" "4.0.5"
+    "@vitest/utils" "4.0.5"
     debug "^4.4.3"
     es-module-lexer "^1.7.0"
     expect-type "^1.2.2"
