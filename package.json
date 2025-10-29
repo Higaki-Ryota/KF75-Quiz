@@ -46,7 +46,7 @@
     "prettier": "^3.3.3",
     "sass-embedded": "^1.92.1",
     "typescript": "^5.9.3",
-    "vitest": "^4.0.4",
+    "vitest": "^4.0.5",
     "vue-test-utils": "^1.0.0-beta.11"
   },
   "volta": {
